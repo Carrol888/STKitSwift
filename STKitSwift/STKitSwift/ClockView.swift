@@ -51,6 +51,7 @@ class ClockView: UIView {
         image?.drawInRect(rect)
     }
 
+
     func start() {
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector:"timeChange", userInfo: nil, repeats: true)
     }

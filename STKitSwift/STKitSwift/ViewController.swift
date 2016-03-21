@@ -51,6 +51,11 @@ class ViewController: UIViewController, OneControllerDelegate {
 
         view.addSubview(heartView)
         heartView.start()
+        view.addSubview(drawImageView)
+        view.addSubview(drawGroupView)
+
+        view.addSubview(clockCAView)
+        clockCAView.start()
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -125,7 +130,7 @@ class ViewController: UIViewController, OneControllerDelegate {
     // MARK: - --- getters 属性 ---
     private lazy var button : UIButton = {
         let button = UIButton()
-        button.frame = CGRectMake(100, 100, 100, 44)
+        button.frame = CGRectMake(100, 100, 100, 100)
         button.backgroundColor = .colorRandom()
         button.setTitle("MODAL", forState:.Normal)
         button.setTitleColor(.colorRandom(), forState: .Normal)
@@ -135,14 +140,14 @@ class ViewController: UIViewController, OneControllerDelegate {
 
     private lazy var touchView:TouchView = {
         let touchView = TouchView()
-        touchView.frame = CGRectMake(100, 300, 100, 100)
+        touchView.frame = CGRectMake(100, 200, 100, 100)
         touchView.backgroundColor = UIColor.colorRandom()
         return touchView
     }()
 
     private lazy var quartzView:QuartzView = {
         let quarzView = QuartzView()
-        quarzView.frame = CGRectMake(0, 300, 100, 100)
+        quarzView.frame = CGRectMake(0, 200, 100, 100)
         return quarzView
     }()
 
@@ -154,12 +159,27 @@ class ViewController: UIViewController, OneControllerDelegate {
     }()
 
     private lazy var clockView:ClockView = {
-        let clockView = ClockView(frame: CGRectMake(200, 300, 100,100))
+        let clockView = ClockView(frame: CGRectMake(200, 200, 100,100))
         return clockView;
     }()
 
     private lazy var heartView:HeartView = {
-        let heartView = HeartView(frame: CGRectMake(100, 400, 100,100))
+        let heartView = HeartView(frame: CGRectMake(0, 300, 100,100))
         return heartView
+    }()
+
+    private lazy var drawImageView:DrawImageView = {
+        let drawImageView = DrawImageView(frame: CGRectMake(100, 300, 100,150))
+        return drawImageView
+    }()
+
+    private lazy var drawGroupView:DrawGroupView = {
+        let drawGroupView = DrawGroupView(frame: CGRectMake(200, 300, 100,100))
+        return drawGroupView
+    }()
+
+    private lazy var clockCAView:ClockCAView = {
+        let clockCAView = ClockCAView(frame: CGRectMake(200, 400, 100,100))
+        return clockCAView;
     }()
 }

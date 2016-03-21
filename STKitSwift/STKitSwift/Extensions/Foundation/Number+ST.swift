@@ -27,6 +27,10 @@ public func numberRandom(number:CGFloat) -> CGFloat {
     return CGFloat(arc4random_uniform(UInt32(number)))
 }
 
+public func numberRandom(number:Double) -> CGFloat {
+    return CGFloat(arc4random_uniform(UInt32(number)))
+}
+
 public func numberRandom(number:Int) -> CGFloat {
     return CGFloat(arc4random_uniform(UInt32(number)))
 }

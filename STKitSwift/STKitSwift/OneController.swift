@@ -13,30 +13,30 @@ protocol OneControllerDelegate : NSObjectProtocol {
 }
 
 class OneController: UIViewController {
-
+    // MARK: - --- interface 接口
     weak  var delegate : OneControllerDelegate?
+
+    // MARK: - --- lift cycle 生命周期 ---
+
+    override func loadView() {
+        let viewSelf = DrawLineView()
+        view = viewSelf
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.colorRandom()
-       delegate!.oneControllerSelected(self)
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        delegate!.oneControllerSelected(self)
     }
     
+    // MARK: - --- delegate 视图委托 ---
 
-    /*
-    // MARK: - Navigation
+    // MARK: - --- event response 事件相应 ---
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // MARK: - --- private methods 私有方法 ---
 
+    // MARK: - --- setters 属性 ---
+
+    // MARK: - --- getters 属性 ---
 }
 
