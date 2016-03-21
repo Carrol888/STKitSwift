@@ -8,11 +8,17 @@
 
 import UIKit
 
+protocol OneControllerDelegate : NSObjectProtocol {
+    func oneControllerSelected(controller:OneController)
+}
+
 class OneController: UIViewController {
 
+    weak  var delegate : OneControllerDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = UIColor.colorRandom()
+       delegate!.oneControllerSelected(self)
         // Do any additional setup after loading the view.
     }
 
@@ -33,3 +39,4 @@ class OneController: UIViewController {
     */
 
 }
+
