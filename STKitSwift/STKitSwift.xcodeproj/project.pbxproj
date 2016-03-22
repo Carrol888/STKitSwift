@@ -30,6 +30,17 @@
 		67B52E3E1CA0D92E001941F6 /* High.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B52E3C1CA0D92E001941F6 /* High.storyboard */; };
 		67B52E401CA0D94B001941F6 /* Custom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B52E3F1CA0D94B001941F6 /* Custom.storyboard */; };
 		67B52E421CA12446001941F6 /* UIBezierPath+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52E411CA12446001941F6 /* UIBezierPath+ST.swift */; };
+		67B52E471CA12D5E001941F6 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52E451CA12D5E001941F6 /* WelcomeView.swift */; };
+		67B52E4A1CA12DC8001941F6 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B52E491CA12DC8001941F6 /* WelcomeView.xib */; };
+		67B52E9C1CA1450F001941F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52E9B1CA1450F001941F6 /* AppDelegate.swift */; };
+		67B52EA31CA1450F001941F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67B52EA21CA1450F001941F6 /* Assets.xcassets */; };
+		67B52EC51CA14723001941F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67B52EC41CA14723001941F6 /* LaunchScreen.storyboard */; };
+		67B52EC71CA14923001941F6 /* TabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52EC61CA14923001941F6 /* TabbarController.swift */; };
+		67B52EC91CA14958001941F6 /* ArenaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52EC81CA14958001941F6 /* ArenaController.swift */; };
+		67B52ECB1CA14974001941F6 /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52ECA1CA14974001941F6 /* DiscoverController.swift */; };
+		67B52ECD1CA1498D001941F6 /* HallController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52ECC1CA1498D001941F6 /* HallController.swift */; };
+		67B52ECF1CA149A9001941F6 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52ECE1CA149A9001941F6 /* HistoryController.swift */; };
+		67B52ED11CA149BB001941F6 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52ED01CA149BB001941F6 /* MyController.swift */; };
 		67C32EAB1C9FDE0C00FFD4DD /* CABasicAnimation+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C32EAA1C9FDE0C00FFD4DD /* CABasicAnimation+ST.swift */; };
 		67FB698F1C97983600CE0375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB698E1C97983600CE0375 /* AppDelegate.swift */; };
 		67FB69941C97983600CE0375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FB69921C97983600CE0375 /* Main.storyboard */; };
@@ -68,6 +79,19 @@
 		67B52E3D1CA0D92E001941F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/High.storyboard; sourceTree = "<group>"; };
 		67B52E3F1CA0D94B001941F6 /* Custom.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Custom.storyboard; sourceTree = "<group>"; };
 		67B52E411CA12446001941F6 /* UIBezierPath+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBezierPath+ST.swift"; sourceTree = "<group>"; };
+		67B52E451CA12D5E001941F6 /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		67B52E491CA12DC8001941F6 /* WelcomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		67B52E991CA1450F001941F6 /* Lottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B52E9B1CA1450F001941F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67B52EA21CA1450F001941F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67B52EA71CA1450F001941F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67B52EC41CA14723001941F6 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67B52EC61CA14923001941F6 /* TabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabbarController.swift; sourceTree = "<group>"; };
+		67B52EC81CA14958001941F6 /* ArenaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArenaController.swift; sourceTree = "<group>"; };
+		67B52ECA1CA14974001941F6 /* DiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
+		67B52ECC1CA1498D001941F6 /* HallController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HallController.swift; sourceTree = "<group>"; };
+		67B52ECE1CA149A9001941F6 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
+		67B52ED01CA149BB001941F6 /* MyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
 		67C32EAA1C9FDE0C00FFD4DD /* CABasicAnimation+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CABasicAnimation+ST.swift"; sourceTree = "<group>"; };
 		67FB698B1C97983600CE0375 /* STKitSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STKitSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FB698E1C97983600CE0375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +109,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		67B52E961CA1450F001941F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67FB69881C97983600CE0375 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -140,10 +171,228 @@
 			path = "HighAnimation-高级动画";
 			sourceTree = "<group>";
 		};
+		67B52E9A1CA1450F001941F6 /* Lottery */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EAB1CA146BE001941F6 /* Classes */,
+				67B52E9B1CA1450F001941F6 /* AppDelegate.swift */,
+				67B52EC41CA14723001941F6 /* LaunchScreen.storyboard */,
+				67B52EA21CA1450F001941F6 /* Assets.xcassets */,
+				67B52EA71CA1450F001941F6 /* Info.plist */,
+			);
+			path = Lottery;
+			sourceTree = "<group>";
+		};
+		67B52EAB1CA146BE001941F6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EAC1CA146BE001941F6 /* Arena(竞技场) */,
+				67B52EB01CA146BE001941F6 /* Discover(发现) */,
+				67B52EB41CA146BE001941F6 /* Hall(购彩大厅) */,
+				67B52EB81CA146BE001941F6 /* History(开奖信息) */,
+				67B52EBC1CA146BE001941F6 /* Main(主要) */,
+				67B52EC01CA146BE001941F6 /* My(我的彩票) */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		67B52EAC1CA146BE001941F6 /* Arena(竞技场) */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EAD1CA146BE001941F6 /* Controller */,
+				67B52EAE1CA146BE001941F6 /* Model */,
+				67B52EAF1CA146BE001941F6 /* View */,
+			);
+			path = "Arena(竞技场)";
+			sourceTree = "<group>";
+		};
+		67B52EAD1CA146BE001941F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EC81CA14958001941F6 /* ArenaController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67B52EAE1CA146BE001941F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67B52EAF1CA146BE001941F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67B52EB01CA146BE001941F6 /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EB11CA146BE001941F6 /* Controller */,
+				67B52EB21CA146BE001941F6 /* Model */,
+				67B52EB31CA146BE001941F6 /* View */,
+			);
+			path = "Discover(发现)";
+			sourceTree = "<group>";
+		};
+		67B52EB11CA146BE001941F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67B52ECA1CA14974001941F6 /* DiscoverController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67B52EB21CA146BE001941F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67B52EB31CA146BE001941F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67B52EB41CA146BE001941F6 /* Hall(购彩大厅) */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EB51CA146BE001941F6 /* Controller */,
+				67B52EB61CA146BE001941F6 /* Model */,
+				67B52EB71CA146BE001941F6 /* View */,
+			);
+			path = "Hall(购彩大厅)";
+			sourceTree = "<group>";
+		};
+		67B52EB51CA146BE001941F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67B52ECC1CA1498D001941F6 /* HallController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67B52EB61CA146BE001941F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67B52EB71CA146BE001941F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67B52EB81CA146BE001941F6 /* History(开奖信息) */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EB91CA146BE001941F6 /* Controller */,
+				67B52EBA1CA146BE001941F6 /* Model */,
+				67B52EBB1CA146BE001941F6 /* View */,
+			);
+			path = "History(开奖信息)";
+			sourceTree = "<group>";
+		};
+		67B52EB91CA146BE001941F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67B52ECE1CA149A9001941F6 /* HistoryController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67B52EBA1CA146BE001941F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67B52EBB1CA146BE001941F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67B52EBC1CA146BE001941F6 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EBD1CA146BE001941F6 /* Controller */,
+				67B52EBE1CA146BE001941F6 /* Model */,
+				67B52EBF1CA146BE001941F6 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		67B52EBD1CA146BE001941F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EC61CA14923001941F6 /* TabbarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67B52EBE1CA146BE001941F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67B52EBF1CA146BE001941F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		67B52EC01CA146BE001941F6 /* My(我的彩票) */ = {
+			isa = PBXGroup;
+			children = (
+				67B52EC11CA146BE001941F6 /* Controller */,
+				67B52EC21CA146BE001941F6 /* Model */,
+				67B52EC31CA146BE001941F6 /* View */,
+			);
+			path = "My(我的彩票)";
+			sourceTree = "<group>";
+		};
+		67B52EC11CA146BE001941F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				67B52ED01CA149BB001941F6 /* MyController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		67B52EC21CA146BE001941F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67B52EC31CA146BE001941F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		67FB69821C97983600CE0375 = {
 			isa = PBXGroup;
 			children = (
 				67FB698D1C97983600CE0375 /* STKitSwift */,
+				67B52E9A1CA1450F001941F6 /* Lottery */,
 				67FB698C1C97983600CE0375 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -152,6 +401,7 @@
 			isa = PBXGroup;
 			children = (
 				67FB698B1C97983600CE0375 /* STKitSwift.app */,
+				67B52E991CA1450F001941F6 /* Lottery.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +414,8 @@
 				67FB69A01C9798ED00CE0375 /* STKit */,
 				67FB698E1C97983600CE0375 /* AppDelegate.swift */,
 				67FB69921C97983600CE0375 /* Main.storyboard */,
+				67B52E451CA12D5E001941F6 /* WelcomeView.swift */,
+				67B52E491CA12DC8001941F6 /* WelcomeView.xib */,
 				67B52E3F1CA0D94B001941F6 /* Custom.storyboard */,
 				67B52E3C1CA0D92E001941F6 /* High.storyboard */,
 				67B52E3A1CA0D8DB001941F6 /* Base.storyboard */,
@@ -221,6 +473,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		67B52E981CA1450F001941F6 /* Lottery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B52EA81CA1450F001941F6 /* Build configuration list for PBXNativeTarget "Lottery" */;
+			buildPhases = (
+				67B52E951CA1450F001941F6 /* Sources */,
+				67B52E961CA1450F001941F6 /* Frameworks */,
+				67B52E971CA1450F001941F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lottery;
+			productName = Lottery;
+			productReference = 67B52E991CA1450F001941F6 /* Lottery.app */;
+			productType = "com.apple.product-type.application";
+		};
 		67FB698A1C97983600CE0375 /* STKitSwift */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67FB699D1C97983600CE0375 /* Build configuration list for PBXNativeTarget "STKitSwift" */;
@@ -248,6 +517,10 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "沈兆良";
 				TargetAttributes = {
+					67B52E981CA1450F001941F6 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = Z25J3BA353;
+					};
 					67FB698A1C97983600CE0375 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = Z25J3BA353;
@@ -268,11 +541,21 @@
 			projectRoot = "";
 			targets = (
 				67FB698A1C97983600CE0375 /* STKitSwift */,
+				67B52E981CA1450F001941F6 /* Lottery */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		67B52E971CA1450F001941F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B52EA31CA1450F001941F6 /* Assets.xcassets in Resources */,
+				67B52EC51CA14723001941F6 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67FB69891C97983600CE0375 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -284,12 +567,27 @@
 				67B52E401CA0D94B001941F6 /* Custom.storyboard in Resources */,
 				67FB69941C97983600CE0375 /* Main.storyboard in Resources */,
 				67B52E371CA0D743001941F6 /* TestController.xib in Resources */,
+				67B52E4A1CA12DC8001941F6 /* WelcomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		67B52E951CA1450F001941F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B52ECD1CA1498D001941F6 /* HallController.swift in Sources */,
+				67B52ED11CA149BB001941F6 /* MyController.swift in Sources */,
+				67B52E9C1CA1450F001941F6 /* AppDelegate.swift in Sources */,
+				67B52EC91CA14958001941F6 /* ArenaController.swift in Sources */,
+				67B52ECB1CA14974001941F6 /* DiscoverController.swift in Sources */,
+				67B52ECF1CA149A9001941F6 /* HistoryController.swift in Sources */,
+				67B52EC71CA14923001941F6 /* TabbarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		67FB69871C97983600CE0375 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -317,6 +615,7 @@
 				67FB69A91C97AE6800CE0375 /* NSString+ST.swift in Sources */,
 				67FB69A71C97A2BD00CE0375 /* UIApplication+ST.swift in Sources */,
 				67B52E391CA0D743001941F6 /* ViewController.swift in Sources */,
+				67B52E471CA12D5E001941F6 /* WelcomeView.swift in Sources */,
 				67B52E2C1CA0D743001941F6 /* BaseView.swift in Sources */,
 				67FB69B11C97AFCE00CE0375 /* UIViewController+ST.swift in Sources */,
 				67B52E351CA0D743001941F6 /* QuartzView.swift in Sources */,
@@ -355,6 +654,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		67B52EA91CA1450F001941F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Lottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ST.Lottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		67B52EAA1CA1450F001941F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Lottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ST.Lottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		67FB699B1C97983600CE0375 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -461,6 +786,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		67B52EA81CA1450F001941F6 /* Build configuration list for PBXNativeTarget "Lottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B52EA91CA1450F001941F6 /* Debug */,
+				67B52EAA1CA1450F001941F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		67FB69861C97983600CE0375 /* Build configuration list for PBXProject "STKitSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

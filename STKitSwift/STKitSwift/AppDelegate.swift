@@ -16,7 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /** 1.程序启动完成的时候调用 */
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        return true}
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window?.rootViewController = UIViewController.controllerInitWithStoryBoardInitial("Main")
+        window?.makeKeyAndVisible()
+
+
+//        WelcomeView.welcomeView()
+//        let welcomeView = WelcomeView()
+//        welcomeView.frame = (window?.bounds)!
+//        window?.addSubview(welcomeView)
+
+        return true
+    }
 
     /** 2.当app失去焦点的时候调用 */
     func applicationWillResignActive(application: UIApplication) {}
