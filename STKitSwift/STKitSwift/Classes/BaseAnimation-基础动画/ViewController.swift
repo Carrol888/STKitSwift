@@ -36,7 +36,7 @@ class ViewController: UIViewController, OneControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "第一个控制器"
+        title = "基础动画"
 //        let item0 = UIBarButtonItem(title: "ST", style: UIBarButtonItemStyle.Done, target: self, action: nil)
 //        let item1 = UIBarButtonItem(title: "ST", style: .Plain, target: self, action: nil)
 //        let item2 = UIBarButtonItem(title: "ST", target: self, action: nil)
@@ -56,6 +56,8 @@ class ViewController: UIViewController, OneControllerDelegate {
 
         view.addSubview(clockCAView)
         clockCAView.start()
+
+        
     }
 
     override func viewWillAppear(animated: Bool) {
@@ -79,7 +81,7 @@ class ViewController: UIViewController, OneControllerDelegate {
 
             if viewSub.isKindOfClass(NSClassFromString("_UINavigationBarBackground")!) {
                 for viewSubSub in viewSub.subviews {
-                    print(viewSubSub)
+//                    print(viewSubSub)
 
                     if viewSubSub.isKindOfClass(NSClassFromString("UIImageView")!) {
                         viewSubSub.layer.backgroundColor = UIColor.redColor().CGColor
@@ -182,4 +184,6 @@ class ViewController: UIViewController, OneControllerDelegate {
         let clockCAView = ClockCAView(frame: CGRectMake(200, 400, 100,100))
         return clockCAView;
     }()
+
+    
 }

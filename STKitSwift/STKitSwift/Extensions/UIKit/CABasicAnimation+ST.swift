@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 public extension CABasicAnimation {
+    
     public convenience init(keyPath:String, repeatCount:Float, duration:CFTimeInterval, removedOnCompletion: Bool, timingFunction:CAMediaTimingFunction,fromValue:AnyObject,byValue:AnyObject) {
         self.init()
 

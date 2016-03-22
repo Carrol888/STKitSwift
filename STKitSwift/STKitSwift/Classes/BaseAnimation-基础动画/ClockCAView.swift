@@ -20,9 +20,9 @@ class ClockCAView: UIView {
         super.init(frame: frame)
         secondLayer = CALayer(
             color: UIColor.colorRandom(),
-            anchorPoint: CGPointMake(0.5, 1),
-            position: CGPointMake(self.frame.width/2, self.frame.width/2),
-            bounds: CGRectMake(0, 0, 1, self.frame.width/2 - 20),
+            anchorPoint: CGPointMake(0.5, 0.8),
+            position: CGPointMake(self.frame.width/2, self.frame.height/2 ),
+            bounds: CGRectMake(0, 0, 1, self.frame.height/2 * 0.8),
             cornerRadius: 0)
 
         self.layer.addSublayer(secondLayer)

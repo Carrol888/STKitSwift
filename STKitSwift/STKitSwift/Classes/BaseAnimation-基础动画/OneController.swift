@@ -27,6 +27,8 @@ class OneController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.colorRandom()
         delegate!.oneControllerSelected(self)
+
+        view.addSubview(gooView)
     }
     
     // MARK: - --- delegate 视图委托 ---
@@ -38,5 +40,10 @@ class OneController: UIViewController {
     // MARK: - --- setters 属性 ---
 
     // MARK: - --- getters 属性 ---
+    private lazy var gooView:GooView = {
+        let gooView = GooView(frame: CGRectMake(200, 500, 20,20))
+        gooView.backgroundColor = UIColor.redColor()
+        return gooView
+    }()
 }
 
