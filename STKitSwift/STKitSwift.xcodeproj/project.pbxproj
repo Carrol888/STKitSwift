@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		670311851C9A4BB60087771E /* Number+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670311841C9A4BB60087771E /* Number+ST.swift */; };
 		670EE1E51C9FD6CD007A092E /* CALayer+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670EE1E41C9FD6CD007A092E /* CALayer+ST.swift */; };
+		67627E4A1CA23E9A00B310DA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E491CA23E9A00B310DA /* NavigationController.swift */; };
+		67627E4C1CA275B400B310DA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E4B1CA275B400B310DA /* MenuItem.swift */; };
+		67627E4E1CA2771500B310DA /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E4D1CA2771500B310DA /* CoverView.swift */; };
+		67627E501CA277AC00B310DA /* UIScreen+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E4F1CA277AC00B310DA /* UIScreen+ST.swift */; };
+		67627E521CA278A700B310DA /* UIWindow+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E511CA278A700B310DA /* UIWindow+ST.swift */; };
+		67627E541CA27CEE00B310DA /* DownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E531CA27CEE00B310DA /* DownMenuView.swift */; };
+		67627E561CA28B0200B310DA /* UIBarButtonItem+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E551CA28B0200B310DA /* UIBarButtonItem+ST.swift */; };
+		67627E581CA2941D00B310DA /* ActiveMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E571CA2941D00B310DA /* ActiveMenuView.swift */; };
+		678FD8E01CA22B2A005E8480 /* UIImage+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678FD8DF1CA22B2A005E8480 /* UIImage+ST.swift */; };
+		678FD8E21CA2344C005E8480 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678FD8E11CA2344C005E8480 /* TabBar.swift */; };
 		67A87FB91C97C2C400DABD48 /* STTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A87FB81C97C2C400DABD48 /* STTextField.swift */; };
 		67A87FBB1C97C84C00DABD48 /* UIBarButtonItem+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A87FBA1C97C84C00DABD48 /* UIBarButtonItem+ST.swift */; };
 		67A87FBD1C97D9E000DABD48 /* UIButton+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A87FBC1C97D9E000DABD48 /* UIButton+ST.swift */; };
@@ -58,6 +68,16 @@
 /* Begin PBXFileReference section */
 		670311841C9A4BB60087771E /* Number+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+ST.swift"; sourceTree = "<group>"; };
 		670EE1E41C9FD6CD007A092E /* CALayer+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+ST.swift"; sourceTree = "<group>"; };
+		67627E491CA23E9A00B310DA /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		67627E4B1CA275B400B310DA /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		67627E4D1CA2771500B310DA /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
+		67627E4F1CA277AC00B310DA /* UIScreen+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+ST.swift"; sourceTree = "<group>"; };
+		67627E511CA278A700B310DA /* UIWindow+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+ST.swift"; sourceTree = "<group>"; };
+		67627E531CA27CEE00B310DA /* DownMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownMenuView.swift; sourceTree = "<group>"; };
+		67627E551CA28B0200B310DA /* UIBarButtonItem+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+ST.swift"; sourceTree = "<group>"; };
+		67627E571CA2941D00B310DA /* ActiveMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveMenuView.swift; sourceTree = "<group>"; };
+		678FD8DF1CA22B2A005E8480 /* UIImage+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+ST.swift"; sourceTree = "<group>"; };
+		678FD8E11CA2344C005E8480 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		67A87FB81C97C2C400DABD48 /* STTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTextField.swift; sourceTree = "<group>"; };
 		67A87FBA1C97C84C00DABD48 /* UIBarButtonItem+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+ST.swift"; sourceTree = "<group>"; };
 		67A87FBC1C97D9E000DABD48 /* UIButton+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+ST.swift"; sourceTree = "<group>"; };
@@ -126,6 +146,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		678FD8DE1CA22AEE005E8480 /* Other(其他) */ = {
+			isa = PBXGroup;
+			children = (
+				678FD8DF1CA22B2A005E8480 /* UIImage+ST.swift */,
+				67627E4F1CA277AC00B310DA /* UIScreen+ST.swift */,
+				67627E511CA278A700B310DA /* UIWindow+ST.swift */,
+				67627E551CA28B0200B310DA /* UIBarButtonItem+ST.swift */,
+			);
+			path = "Other(其他)";
+			sourceTree = "<group>";
+		};
 		67B52E1A1CA0D743001941F6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,12 +217,13 @@
 		67B52EAB1CA146BE001941F6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				67B52EB41CA146BE001941F6 /* Hall(购彩大厅) */,
 				67B52EAC1CA146BE001941F6 /* Arena(竞技场) */,
 				67B52EB01CA146BE001941F6 /* Discover(发现) */,
-				67B52EB41CA146BE001941F6 /* Hall(购彩大厅) */,
 				67B52EB81CA146BE001941F6 /* History(开奖信息) */,
-				67B52EBC1CA146BE001941F6 /* Main(主要) */,
 				67B52EC01CA146BE001941F6 /* My(我的彩票) */,
+				67B52EBC1CA146BE001941F6 /* Main(主要) */,
+				678FD8DE1CA22AEE005E8480 /* Other(其他) */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -288,6 +320,10 @@
 		67B52EB71CA146BE001941F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				67627E4B1CA275B400B310DA /* MenuItem.swift */,
+				67627E4D1CA2771500B310DA /* CoverView.swift */,
+				67627E531CA27CEE00B310DA /* DownMenuView.swift */,
+				67627E571CA2941D00B310DA /* ActiveMenuView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,6 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				67B52EC61CA14923001941F6 /* TabbarController.swift */,
+				67627E491CA23E9A00B310DA /* NavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -352,6 +389,7 @@
 		67B52EBF1CA146BE001941F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				678FD8E11CA2344C005E8480 /* TabBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -578,12 +616,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				678FD8E21CA2344C005E8480 /* TabBar.swift in Sources */,
 				67B52ECD1CA1498D001941F6 /* HallController.swift in Sources */,
+				67627E501CA277AC00B310DA /* UIScreen+ST.swift in Sources */,
+				67627E561CA28B0200B310DA /* UIBarButtonItem+ST.swift in Sources */,
 				67B52ED11CA149BB001941F6 /* MyController.swift in Sources */,
 				67B52E9C1CA1450F001941F6 /* AppDelegate.swift in Sources */,
 				67B52EC91CA14958001941F6 /* ArenaController.swift in Sources */,
+				67627E541CA27CEE00B310DA /* DownMenuView.swift in Sources */,
 				67B52ECB1CA14974001941F6 /* DiscoverController.swift in Sources */,
 				67B52ECF1CA149A9001941F6 /* HistoryController.swift in Sources */,
+				67627E521CA278A700B310DA /* UIWindow+ST.swift in Sources */,
+				67627E4A1CA23E9A00B310DA /* NavigationController.swift in Sources */,
+				67627E4E1CA2771500B310DA /* CoverView.swift in Sources */,
+				67627E581CA2941D00B310DA /* ActiveMenuView.swift in Sources */,
+				67627E4C1CA275B400B310DA /* MenuItem.swift in Sources */,
+				678FD8E01CA22B2A005E8480 /* UIImage+ST.swift in Sources */,
 				67B52EC71CA14923001941F6 /* TabbarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,6 +841,7 @@
 				67B52EAA1CA1450F001941F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67FB69861C97983600CE0375 /* Build configuration list for PBXProject "STKitSwift" */ = {
 			isa = XCConfigurationList;

@@ -14,6 +14,11 @@ class MyController: UIViewController {
 
     // MARK: - --- lift cycle 生命周期 ---
 
+
+    override func viewDidLoad() {
+//        super.viewDidLoad()
+        view.backgroundColor = UIColor.whiteColor()
+    }
     // MARK: - --- delegate 视图委托 ---
 
     // MARK: - --- event response 事件相应 ---

@@ -17,7 +17,7 @@ class ViewController: UIViewController, OneControllerDelegate {
     // loadView作用：自定义控制器的view
     // loadView什么时候调用：第一次使用控制器的view的时候调用
     // 注意：在这个方法中如果没有自定义view,就不能获取控制器的view
-    // 一旦重写了这个方法，就不要调用[super loadView]
+    // 一旦重写了这个方法，就不要调用[super loadView], 将不会载入视图
     // 如果重写了这个方法，就不会去加载storyboard描述的控制器的View
     override func loadView() {
         let viewSelf = UIView(frame: CGRectZero)
