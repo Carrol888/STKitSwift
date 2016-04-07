@@ -35,7 +35,7 @@ class DrawImageView: UIView {
 
         let image = UIImage(named: String(times))
         imageView.image = image
-        times++
+        times += 1
 
         let animation = CATransition()
         animation.type = "pageCurl"

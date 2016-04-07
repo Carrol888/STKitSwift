@@ -28,9 +28,14 @@ class ViewController: UIViewController, OneControllerDelegate {
         button.setTitle("PUSH", forState: .Normal)
         button.setTitleColor(UIColor.colorRandom(), forState: .Normal)
         viewSelf.addSubview(button)
-        button.addTarget(self, action: "gotoOne", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController.gotoOne), forControlEvents: .TouchUpInside)
 
         view = viewSelf
+
+
+        print(APPName)
+        print(APPIdentifier)
+        print(APPExecutable)
     }
 
 
@@ -136,7 +141,7 @@ class ViewController: UIViewController, OneControllerDelegate {
         button.backgroundColor = .colorRandom()
         button.setTitle("MODAL", forState:.Normal)
         button.setTitleColor(.colorRandom(), forState: .Normal)
-        button.addTarget(self, action: "modalVC", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(ViewController.modalVC), forControlEvents: .TouchUpInside)
         return button
     }()
 

@@ -11,6 +11,14 @@ import UIKit
 
 /** 1.获取 AppDelegate */
 let APPDelegate:UIApplicationDelegate = UIApplication.sharedApplication().delegate!
+/** 2.APP的命名空间名称 */
+let APPExecutable:String = NSBundle.mainBundle().infoDictionary!["CFBundleExecutable"] as! String
+/** 3.APP的版本号 */
+let APPVersion:String = NSBundle.mainBundle().infoDictionary!["CFBundleShortVersionString"] as! String
+/** 4.APP的名称 */
+let APPName:String = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! String
+/** 5.APP的ID */
+let APPIdentifier:String = NSBundle.mainBundle().infoDictionary!["CFBundleIdentifier"] as! String
 
 public class STApp {
 

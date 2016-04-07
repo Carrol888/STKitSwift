@@ -20,7 +20,7 @@ class TestController: UIViewController {
         button.frame = CGRectMake(100, 100, 100, 44)
         button.setTitle("backVC", forState:UIControlState.Normal)
         button.setTitleColor(UIColor.colorRandom(), forState: .Normal)
-        button.addTarget(self, action: "backVC", forControlEvents:UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: #selector(TestController.backVC), forControlEvents:UIControlEvents.TouchUpInside)
         view.addSubview(button)
     }
     // MARK: - --- delegate 视图委托 ---

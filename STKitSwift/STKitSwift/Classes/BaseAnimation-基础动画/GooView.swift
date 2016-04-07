@@ -40,7 +40,7 @@ class GooView: UIButton {
         layer.cornerRadius = width/2
 
         // 添加手势
-        let panGesture = UIPanGestureRecognizer(target: self, action: "pan:")
+        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(GooView.pan(_:)))
         addGestureRecognizer(panGesture)
 
         // 设置小圆

@@ -53,7 +53,7 @@ class ClockView: UIView {
 
 
     func start() {
-        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector:"timeChange", userInfo: nil, repeats: true)
+        NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector:#selector(ClockView.timeChange), userInfo: nil, repeats: true)
     }
 
     func timeChange() {

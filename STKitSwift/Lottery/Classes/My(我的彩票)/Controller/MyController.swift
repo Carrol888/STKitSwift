@@ -18,6 +18,9 @@ class MyController: UIViewController {
     override func viewDidLoad() {
 //        super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
+//        print(APPName)
+//        print(APPIdentifier)
+//        print(APPExecutable)
     }
     // MARK: - --- delegate 视图委托 ---
 

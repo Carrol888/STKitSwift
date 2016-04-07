@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		670311851C9A4BB60087771E /* Number+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670311841C9A4BB60087771E /* Number+ST.swift */; };
 		670EE1E51C9FD6CD007A092E /* CALayer+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670EE1E41C9FD6CD007A092E /* CALayer+ST.swift */; };
+		674C729D1CB614AE00095739 /* UIView+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C729C1CB614AE00095739 /* UIView+ST.swift */; };
 		67627E4A1CA23E9A00B310DA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E491CA23E9A00B310DA /* NavigationController.swift */; };
 		67627E4C1CA275B400B310DA /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E4B1CA275B400B310DA /* MenuItem.swift */; };
 		67627E4E1CA2771500B310DA /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67627E4D1CA2771500B310DA /* CoverView.swift */; };
@@ -68,6 +69,7 @@
 /* Begin PBXFileReference section */
 		670311841C9A4BB60087771E /* Number+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Number+ST.swift"; sourceTree = "<group>"; };
 		670EE1E41C9FD6CD007A092E /* CALayer+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+ST.swift"; sourceTree = "<group>"; };
+		674C729C1CB614AE00095739 /* UIView+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ST.swift"; sourceTree = "<group>"; };
 		67627E491CA23E9A00B310DA /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		67627E4B1CA275B400B310DA /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		67627E4D1CA2771500B310DA /* CoverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
@@ -487,6 +489,7 @@
 			children = (
 				67FB69AA1C97AE9D00CE0375 /* UIColor+ST.swift */,
 				67FB69AB1C97AE9D00CE0375 /* UIScreen+ST.swift */,
+				674C729C1CB614AE00095739 /* UIView+ST.swift */,
 				67FB69A61C97A2BD00CE0375 /* UIApplication+ST.swift */,
 				67FB69B01C97AFCE00CE0375 /* UIViewController+ST.swift */,
 				67A87FBA1C97C84C00DABD48 /* UIBarButtonItem+ST.swift */,
@@ -653,6 +656,7 @@
 				67B52E321CA0D743001941F6 /* GooView.swift in Sources */,
 				67B52E311CA0D743001941F6 /* DrawLineView.swift in Sources */,
 				67A87FBB1C97C84C00DABD48 /* UIBarButtonItem+ST.swift in Sources */,
+				674C729D1CB614AE00095739 /* UIView+ST.swift in Sources */,
 				67B52E2D1CA0D743001941F6 /* ClockCAView.swift in Sources */,
 				67FB69AF1C97AEA600CE0375 /* Array+ST.swift in Sources */,
 				67A87FB91C97C2C400DABD48 /* STTextField.swift in Sources */,

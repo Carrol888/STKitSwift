@@ -19,12 +19,12 @@ public extension UIBarButtonItem {
 
     public convenience init(barButtonSpaceType space: UIBarButtonSystemItem, width: CGFloat = 0.0) {
         if space == .FixedSpace || space == .FlexibleSpace {
-            self.init(barButtonSystemItem: space, target: nil, action: "")
+            self.init(barButtonSystemItem: space, target: nil, action: nil)
             if space == .FixedSpace {
                 self.width = width
             }
         } else {
-            self.init(barButtonSystemItem:.FlexibleSpace, target: nil, action: "")
+            self.init(barButtonSystemItem:.FlexibleSpace, target: nil, action: nil)
         }
     }
 

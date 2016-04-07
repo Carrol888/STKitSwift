@@ -11,7 +11,7 @@ import UIKit
 class TouchView: UIView {
     // 当手指开始触摸view
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        print("\(__FUNCTION__)")
+        print("\(#function)")
     }
 
     // 当手指在view上移动的时候
@@ -33,16 +33,16 @@ class TouchView: UIView {
     }
     // 当手指离开这个view的时候
     override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        print("\(__FUNCTION__)")
+        print("\(#function)")
     }
 
     // 当触摸事件被打断的时候调用(电话打入)
     override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-        print("\(__FUNCTION__)")
+        print("\(#function)")
     }
 
     override func touchesEstimatedPropertiesUpdated(touches: Set<NSObject>) {
-        print("\(__FUNCTION__)")
+        print("\(#function)")
     }
 
 }
