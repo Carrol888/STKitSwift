@@ -53,6 +53,7 @@
 		67B52ECF1CA149A9001941F6 /* HistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52ECE1CA149A9001941F6 /* HistoryController.swift */; };
 		67B52ED11CA149BB001941F6 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B52ED01CA149BB001941F6 /* MyController.swift */; };
 		67C32EAB1C9FDE0C00FFD4DD /* CABasicAnimation+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C32EAA1C9FDE0C00FFD4DD /* CABasicAnimation+ST.swift */; };
+		67D0B1F91CC0AD5400B84597 /* STButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D0B1F81CC0AD5400B84597 /* STButton.swift */; };
 		67FB698F1C97983600CE0375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB698E1C97983600CE0375 /* AppDelegate.swift */; };
 		67FB69941C97983600CE0375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67FB69921C97983600CE0375 /* Main.storyboard */; };
 		67FB69961C97983600CE0375 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67FB69951C97983600CE0375 /* Assets.xcassets */; };
@@ -115,6 +116,7 @@
 		67B52ECE1CA149A9001941F6 /* HistoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryController.swift; sourceTree = "<group>"; };
 		67B52ED01CA149BB001941F6 /* MyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
 		67C32EAA1C9FDE0C00FFD4DD /* CABasicAnimation+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CABasicAnimation+ST.swift"; sourceTree = "<group>"; };
+		67D0B1F81CC0AD5400B84597 /* STButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STButton.swift; sourceTree = "<group>"; };
 		67FB698B1C97983600CE0375 /* STKitSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STKitSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67FB698E1C97983600CE0375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67FB69931C97983600CE0375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -487,6 +489,7 @@
 		67FB69A21C979BC100CE0375 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				67D0B1F81CC0AD5400B84597 /* STButton.swift */,
 				67FB69AA1C97AE9D00CE0375 /* UIColor+ST.swift */,
 				67FB69AB1C97AE9D00CE0375 /* UIScreen+ST.swift */,
 				674C729C1CB614AE00095739 /* UIView+ST.swift */,
@@ -657,6 +660,7 @@
 				67B52E311CA0D743001941F6 /* DrawLineView.swift in Sources */,
 				67A87FBB1C97C84C00DABD48 /* UIBarButtonItem+ST.swift in Sources */,
 				674C729D1CB614AE00095739 /* UIView+ST.swift in Sources */,
+				67D0B1F91CC0AD5400B84597 /* STButton.swift in Sources */,
 				67B52E2D1CA0D743001941F6 /* ClockCAView.swift in Sources */,
 				67FB69AF1C97AEA600CE0375 /* Array+ST.swift in Sources */,
 				67A87FB91C97C2C400DABD48 /* STTextField.swift in Sources */,
