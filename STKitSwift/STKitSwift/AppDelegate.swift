@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     /** 1.程序启动完成的时候调用 */
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
+        STApp.UUID()
+
+    
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = UIViewController.controllerInitWithStoryBoardInitial("Main")
         window?.makeKeyAndVisible()

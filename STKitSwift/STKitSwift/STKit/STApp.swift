@@ -21,5 +21,12 @@ let APPName:String = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as! S
 let APPIdentifier:String = NSBundle.mainBundle().infoDictionary!["CFBundleIdentifier"] as! String
 
 public class STApp {
-
+    /** 
+     1.唯一的标识符
+     */
+    static func UUID() -> NSString {
+        let theUUID: CFUUIDRef? = CFUUIDCreate(kCFAllocatorDefault)
+        let string: CFStringRef? = CFUUIDCreateString(kCFAllocatorDefault, theUUID)
+        return string!
+    }
 }

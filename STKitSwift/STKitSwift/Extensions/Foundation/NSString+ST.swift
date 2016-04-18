@@ -14,3 +14,6 @@ public func stringFromClass(cls: AnyClass)->String?{
     let string = NSStringFromClass(cls.self).componentsSeparatedByString(".").last
     return string
 }
+
+public extension NSString {
+}
