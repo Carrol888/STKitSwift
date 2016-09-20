@@ -66,6 +66,7 @@
 		67FB69AD1C97AE9D00CE0375 /* UIScreen+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB69AB1C97AE9D00CE0375 /* UIScreen+ST.swift */; };
 		67FB69AF1C97AEA600CE0375 /* Array+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB69AE1C97AEA600CE0375 /* Array+ST.swift */; };
 		67FB69B11C97AFCE00CE0375 /* UIViewController+ST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB69B01C97AFCE00CE0375 /* UIViewController+ST.swift */; };
+		7002C6B11D8FEB25008027C0 /* CustomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7002C6B01D8FEB25008027C0 /* CustomController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -132,6 +133,7 @@
 		67FB69AB1C97AE9D00CE0375 /* UIScreen+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+ST.swift"; sourceTree = "<group>"; };
 		67FB69AE1C97AEA600CE0375 /* Array+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+ST.swift"; sourceTree = "<group>"; };
 		67FB69B01C97AFCE00CE0375 /* UIViewController+ST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+ST.swift"; sourceTree = "<group>"; };
+		7002C6B01D8FEB25008027C0 /* CustomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		67B52E2A1CA0D743001941F6 /* Custom-自定义动画 */ = {
 			isa = PBXGroup;
 			children = (
+				7002C6B01D8FEB25008027C0 /* CustomController.swift */,
 			);
 			path = "Custom-自定义动画";
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				67B52E421CA12446001941F6 /* UIBezierPath+ST.swift in Sources */,
 				67B52E361CA0D743001941F6 /* TestController.swift in Sources */,
 				67A87FBD1C97D9E000DABD48 /* UIButton+ST.swift in Sources */,
+				7002C6B11D8FEB25008027C0 /* CustomController.swift in Sources */,
 				67B52E341CA0D743001941F6 /* OneController.swift in Sources */,
 				67B52E321CA0D743001941F6 /* GooView.swift in Sources */,
 				67B52E311CA0D743001941F6 /* DrawLineView.swift in Sources */,
@@ -825,11 +829,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = STKitSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ST.STKitSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -837,11 +844,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = STKitSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ST.STKitSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
