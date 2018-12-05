@@ -1,0 +1,8 @@
+project 'STKitSwiftDemo.xcodeproj'
+platform :ios, '12.0'
+
+target 'STKitSwiftDemo' do
+  use_frameworks!
+  
+  pod 'STKitSwift', :path => '../'
+end

@@ -1,0 +1,16 @@
+PODS:
+  - STKitSwift (1.0)
+
+DEPENDENCIES:
+  - STKitSwift (from `../`)
+
+EXTERNAL SOURCES:
+  STKitSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  STKitSwift: 2d672d300210d27acf3267b6e74c89f0681fbab6
+
+PODFILE CHECKSUM: 6f2cfd11f04fe2504f161a03336152c5b35ae94b
+
+COCOAPODS: 1.5.2
