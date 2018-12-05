@@ -1,5 +1,4 @@
 # STKitSwift
-常用的方法扩展
+用于iOSAPP快速开发框架，使用swift4.2
 
------------------
-[标哥的时钟动画教程](http://www.henishuo.com/clock-animation)
+
