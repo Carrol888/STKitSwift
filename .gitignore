@@ -18,7 +18,9 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata/
+
+## 支持Carthage
+# xcuserdata/
 
 ## UserInterfaceState.xcuserstate：Xcode中保存的用户操作的GUI状态，如窗口位置，打开的标签页，在项目检查等展开的节点、 简单地调整大小的Xcode窗口将这个文件来改变和修改您的源代码控制系统进行标记, szl add
 *.xcuserstate
