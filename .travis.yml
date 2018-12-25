@@ -1,0 +1,10 @@
+language: objective-c
+osx_image: xcode10.0
+env: SWIFT_SNAPSHOT=4.2
+branches:
+only:
+- develop
+
+xcode_project: STKitSwift.xcodeproj
+xcode_scheme: STKitSwift
+xcode_destination: platform=iOS Simulator,OS=12.1,name=iPad Pro (9.7-inch)
