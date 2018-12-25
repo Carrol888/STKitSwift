@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "67D5516421D2056300B68C87"
-               BuildableName = "libSTKitSwift.a"
+               BlueprintIdentifier = "6796E4A221D21F3800C2C5E4"
+               BuildableName = "STKitSwift.framework"
                BlueprintName = "STKitSwift"
                ReferencedContainer = "container:STKitSwift.xcodeproj">
             </BuildableReference>
@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6796E4AB21D21F3900C2C5E4"
+               BuildableName = "STKitSwiftTests.xctest"
+               BlueprintName = "STKitSwiftTests"
+               ReferencedContainer = "container:STKitSwift.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6796E4A221D21F3800C2C5E4"
+            BuildableName = "STKitSwift.framework"
+            BlueprintName = "STKitSwift"
+            ReferencedContainer = "container:STKitSwift.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -45,8 +64,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "67D5516421D2056300B68C87"
-            BuildableName = "libSTKitSwift.a"
+            BlueprintIdentifier = "6796E4A221D21F3800C2C5E4"
+            BuildableName = "STKitSwift.framework"
             BlueprintName = "STKitSwift"
             ReferencedContainer = "container:STKitSwift.xcodeproj">
          </BuildableReference>
@@ -63,8 +82,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "67D5516421D2056300B68C87"
-            BuildableName = "libSTKitSwift.a"
+            BlueprintIdentifier = "6796E4A221D21F3800C2C5E4"
+            BuildableName = "STKitSwift.framework"
             BlueprintName = "STKitSwift"
             ReferencedContainer = "container:STKitSwift.xcodeproj">
          </BuildableReference>
