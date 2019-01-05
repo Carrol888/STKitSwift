@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,6 @@
 		6796E4B221D21F3900C2C5E4 /* STKitSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6796E4B121D21F3900C2C5E4 /* STKitSwiftTests.swift */; };
 		6796E4B421D21F3900C2C5E4 /* STKitSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6796E4A621D21F3800C2C5E4 /* STKitSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6796E4EF21D220A500C2C5E4 /* UIView+STKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6796E4EE21D220A500C2C5E4 /* UIView+STKit.swift */; };
-		6796E4FD21D2239B00C2C5E4 /* UIView+STKit.swift in Headers */ = {isa = PBXBuildFile; fileRef = 6796E4EE21D220A500C2C5E4 /* UIView+STKit.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +97,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6796E4B421D21F3900C2C5E4 /* STKitSwift.h in Headers */,
-				6796E4FD21D2239B00C2C5E4 /* UIView+STKit.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +159,7 @@
 				};
 			};
 			buildConfigurationList = 6796E49D21D21F3800C2C5E4 /* Build configuration list for PBXProject "STKitSwift" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
