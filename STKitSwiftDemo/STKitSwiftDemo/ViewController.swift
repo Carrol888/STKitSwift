@@ -16,17 +16,13 @@ class ViewController: UIViewController {
 
         let label = UILabel()
         view.addSubview(label)
+        view.backgroundColor = .red
 
-
-        label.text = "test"
-        label.st_width = 100
-        label.st_height = 44
-        label.st_left = 20
-        label.st_top = 100
-        label.st_
-        label.backgroundColor = .red
+        let date = Date()
+        print("\(date) \(date.st_year) \(date.st_month) \(date.st_day) \(date.st_hour) \(date.st_minute) \(date.st_second)")
     }
 
-
+    @objc func injected(){
+        print("I've been injected: \(self)")
+    }
 }
-

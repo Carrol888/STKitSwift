@@ -11,6 +11,8 @@
 		6796E4B221D21F3900C2C5E4 /* STKitSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6796E4B121D21F3900C2C5E4 /* STKitSwiftTests.swift */; };
 		6796E4B421D21F3900C2C5E4 /* STKitSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6796E4A621D21F3800C2C5E4 /* STKitSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6796E4EF21D220A500C2C5E4 /* UIView+STKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6796E4EE21D220A500C2C5E4 /* UIView+STKit.swift */; };
+		67FB10BF21E054A20012DE4A /* Date+STKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB10BE21E054A20012DE4A /* Date+STKit.swift */; };
+		67FB10C021E054A20012DE4A /* Date+STKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FB10BE21E054A20012DE4A /* Date+STKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,7 @@
 		6796E4B121D21F3900C2C5E4 /* STKitSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STKitSwiftTests.swift; sourceTree = "<group>"; };
 		6796E4B321D21F3900C2C5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6796E4EE21D220A500C2C5E4 /* UIView+STKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+STKit.swift"; sourceTree = "<group>"; };
+		67FB10BE21E054A20012DE4A /* Date+STKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+STKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,7 @@
 			children = (
 				6796E4A621D21F3800C2C5E4 /* STKitSwift.h */,
 				6796E4EE21D220A500C2C5E4 /* UIView+STKit.swift */,
+				67FB10BE21E054A20012DE4A /* Date+STKit.swift */,
 				6796E4A721D21F3900C2C5E4 /* Info.plist */,
 			);
 			path = STKitSwift;
@@ -147,7 +151,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "沈兆良";
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					6796E4A221D21F3800C2C5E4 = {
 						CreatedOnToolsVersion = 10.1;
@@ -199,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6796E4EF21D220A500C2C5E4 /* UIView+STKit.swift in Sources */,
+				67FB10BF21E054A20012DE4A /* Date+STKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6796E4B221D21F3900C2C5E4 /* STKitSwiftTests.swift in Sources */,
+				67FB10C021E054A20012DE4A /* Date+STKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

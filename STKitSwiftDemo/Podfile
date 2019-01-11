@@ -5,4 +5,5 @@ target 'STKitSwiftDemo' do
   use_frameworks!
   
   pod 'STKitSwift', :path => '../'
+  pod 'SwiftLint', '~> 0.29.2'
 end
