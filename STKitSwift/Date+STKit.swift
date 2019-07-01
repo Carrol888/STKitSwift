@@ -4,7 +4,7 @@
 //
 //  The MIT License (MIT)
 //
-//  Copyright (c) 2016 沈天
+//  Copyright (c) 2019 沈天
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -31,7 +31,7 @@ public extension Date {
     // MARK: - Variables
 
     /// Set and get current year.
-    public var st_year: Int {
+    var st_year: Int {
         get {
             let calendar = Calendar.autoupdatingCurrent
             let components = calendar.dateComponents([.year], from: self)
@@ -48,7 +48,7 @@ public extension Date {
     }
 
     /// Set and get current month.
-    public var st_month: Int {
+    var st_month: Int {
         get {
             let calendar = Calendar.autoupdatingCurrent
             let components = calendar.dateComponents([.month], from: self)
@@ -65,7 +65,7 @@ public extension Date {
     }
 
     /// Set and get current day.
-    public var st_day: Int {
+    var st_day: Int {
         get {
             let calendar = Calendar.autoupdatingCurrent
             let components = calendar.dateComponents([.day], from: self)
@@ -82,7 +82,7 @@ public extension Date {
     }
 
     /// Set and get current hour.
-    public var st_hour: Int {
+    var st_hour: Int {
         get {
             let calendar = Calendar.autoupdatingCurrent
             let components = calendar.dateComponents([.hour], from: self)
@@ -99,7 +99,7 @@ public extension Date {
     }
 
     /// Set and get current minute.
-    public var st_minute: Int {
+    var st_minute: Int {
         get {
             let calendar = Calendar.autoupdatingCurrent
             let components = calendar.dateComponents([.minute], from: self)
@@ -116,7 +116,7 @@ public extension Date {
     }
 
     /// Set and get current second.
-    public var st_second: Int {
+    var st_second: Int {
         get {
             let calendar = Calendar.autoupdatingCurrent
             let components = calendar.dateComponents([.second], from: self)
@@ -139,7 +139,7 @@ public extension Date {
     /// - hour: Hour component.
     /// - minute: Minute component.
     /// - second: Second component.
-    public enum EditableDateComponents: Int {
+    enum EditableDateComponents: Int {
         case year
         case month
         case day
@@ -154,7 +154,7 @@ public extension Date {
     ///
     /// - Parameters:
     ///   - components: Dictionary of components and values to be updated.
-    public mutating func update(components: [EditableDateComponents: Int]) {
+    mutating func update(components: [EditableDateComponents: Int]) {
         let autoupdatingCalendar = Calendar.autoupdatingCurrent
         var dateComponents = autoupdatingCalendar.dateComponents([.year, .month, .day, .weekday, .hour, .minute, .second, .nanosecond], from: self)
 

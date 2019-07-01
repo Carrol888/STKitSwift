@@ -201,7 +201,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-STKitSwiftDemo/Pods-STKitSwiftDemo-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-STKitSwiftDemo/Pods-STKitSwiftDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/STKitSwift/STKitSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -210,7 +210,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-STKitSwiftDemo/Pods-STKitSwiftDemo-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-STKitSwiftDemo/Pods-STKitSwiftDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -378,7 +378,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.st.STKitSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -398,7 +398,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.st.STKitSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

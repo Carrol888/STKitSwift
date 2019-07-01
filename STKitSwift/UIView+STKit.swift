@@ -4,7 +4,7 @@
 //
 //  The MIT License (MIT)
 //
-//  Copyright (c) 2016 沈天
+//  Copyright (c) 2019 沈天
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@ import UIKit
 
 public extension UIView {
     /// x
-    public var st_x: CGFloat {
+    var st_x: CGFloat {
         get {
             return frame.minX
         }
@@ -38,7 +38,7 @@ public extension UIView {
     }
     
     /// y
-    public var st_y: CGFloat {
+    var st_y: CGFloat {
         get {
             return frame.minY
         }
@@ -48,7 +48,7 @@ public extension UIView {
     }
     
     /// width
-    public var st_width: CGFloat {
+    var st_width: CGFloat {
         get {
             return frame.width
         }
@@ -57,7 +57,7 @@ public extension UIView {
         }
     }
     /// height
-    public var st_height: CGFloat {
+    var st_height: CGFloat {
         get {
             return frame.height
         }
@@ -67,7 +67,7 @@ public extension UIView {
     }
     
     /// top
-    public var st_top: CGFloat {
+    var st_top: CGFloat {
         get {
             return frame.minY
         }
@@ -77,7 +77,7 @@ public extension UIView {
     }
     
     /// bottom
-    public var st_bottom: CGFloat {
+    var st_bottom: CGFloat {
         get {
             return frame.maxY
         }
@@ -87,7 +87,7 @@ public extension UIView {
     }
     
     /// left
-    public var st_left: CGFloat {
+    var st_left: CGFloat {
         get {
             return frame.minX
         }
@@ -97,7 +97,7 @@ public extension UIView {
     }
     
     /// right
-    public var st_right: CGFloat {
+    var st_right: CGFloat {
         get {
             return frame.maxX
         }
@@ -107,7 +107,7 @@ public extension UIView {
     }
     
     /// centerX
-    public var st_centerX: CGFloat {
+    var st_centerX: CGFloat {
         get {
             return center.x
         }
@@ -117,7 +117,7 @@ public extension UIView {
     }
     
     /// centerY
-    public var st_centerY: CGFloat {
+    var st_centerY: CGFloat {
         get {
             return center.y
         }
@@ -127,7 +127,7 @@ public extension UIView {
     }
     
     /// size
-    public var st_size: CGSize {
+    var st_size: CGSize {
         get {
             return frame.size
         }
