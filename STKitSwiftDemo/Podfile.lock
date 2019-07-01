@@ -1,23 +1,24 @@
 PODS:
-  - STKitSwift (1.0)
-  - SwiftLint (0.32.0)
+  - SnapKit (5.0.0)
+  - STKitSwift (1.0):
+    - SnapKit
 
 DEPENDENCIES:
+  - SnapKit (~> 5.0.0)
   - STKitSwift (from `../`)
-  - SwiftLint (~> 0.32.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - SwiftLint
+    - SnapKit
 
 EXTERNAL SOURCES:
   STKitSwift:
     :path: "../"
 
 SPEC CHECKSUMS:
-  STKitSwift: a7807f9cae0b2dcb347af5596fcecb14f1c22f08
-  SwiftLint: 009a898ef2a1c851f45e1b59349bf6ff2ddc990d
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
+  STKitSwift: 5116700c2df00d3c5e11c721270ae294f8e6ff37
 
-PODFILE CHECKSUM: 603e5f6969b895f780b62dd4c02af61e9fc0302f
+PODFILE CHECKSUM: 9dabf58c314a3931f2312bad964a07eb3e9c33b0
 
 COCOAPODS: 1.6.1

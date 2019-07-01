@@ -13,5 +13,7 @@ Pod::Spec.new do |s|
   s.swift_version         = '5'
   s.ios.deployment_target = '12.0'
   s.ios.source_files      = 'STKitSwift/*.swift'
+  
+  s.ios.dependency 'SnapKit'
 
 end
