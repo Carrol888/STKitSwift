@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0410C62B22C9F12B005C2382 /* STMoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C62A22C9F12B005C2382 /* STMoveButton.swift */; };
+		0410C62F22C9FCB6005C2382 /* STGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C62E22C9FCB6005C2382 /* STGradientButton.swift */; };
 		0492AF2522C9B7EA00F73D31 /* STHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF2422C9B7EA00F73D31 /* STHUD.swift */; };
 		0492AF2C22C9B9A500F73D31 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0492AF2B22C9B9A500F73D31 /* SnapKit.framework */; };
 		0492AF2E22C9B9CF00F73D31 /* STAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF2D22C9B9CF00F73D31 /* STAlertView.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		0410C62A22C9F12B005C2382 /* STMoveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMoveButton.swift; sourceTree = "<group>"; };
+		0410C62E22C9FCB6005C2382 /* STGradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STGradientButton.swift; sourceTree = "<group>"; };
 		0492AF2422C9B7EA00F73D31 /* STHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STHUD.swift; sourceTree = "<group>"; };
 		0492AF2B22C9B9A500F73D31 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
 		0492AF2D22C9B9CF00F73D31 /* STAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAlertView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				0492AF2D22C9B9CF00F73D31 /* STAlertView.swift */,
 				0492AF2F22C9C12D00F73D31 /* UIViewController+STKit.swift */,
 				0410C62A22C9F12B005C2382 /* STMoveButton.swift */,
+				0410C62E22C9FCB6005C2382 /* STGradientButton.swift */,
 				6796E4A721D21F3900C2C5E4 /* Info.plist */,
 			);
 			path = STKitSwift;
@@ -231,6 +234,7 @@
 				0492AF2E22C9B9CF00F73D31 /* STAlertView.swift in Sources */,
 				0410C62B22C9F12B005C2382 /* STMoveButton.swift in Sources */,
 				0492AF3022C9C12D00F73D31 /* UIViewController+STKit.swift in Sources */,
+				0410C62F22C9FCB6005C2382 /* STGradientButton.swift in Sources */,
 				67FB10BF21E054A20012DE4A /* Date+STKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

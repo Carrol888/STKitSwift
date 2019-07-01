@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2R-Mj-5NN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="-613"/>
+            <point key="canvasLocation" x="1851" y="-1329"/>
         </scene>
         <!--Alert Controller-->
         <scene sceneID="EYz-MP-K7n">
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEQ-vz-J0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="100"/>
+            <point key="canvasLocation" x="1851" y="-541"/>
         </scene>
         <!--Move Button Controller-->
         <scene sceneID="hnB-u7-Gfm">
@@ -108,7 +108,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHS-xg-0WF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="824"/>
+            <point key="canvasLocation" x="1851" y="153"/>
+        </scene>
+        <!--Gradient Button Controller-->
+        <scene sceneID="ldy-ZC-jYZ">
+            <objects>
+                <viewController id="dTQ-Oj-j5z" customClass="STGradientButtonController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NDs-x3-AYr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8770066353" green="0.97549229449999997" blue="0.98584653249999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ZsZ-9E-2a4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYg-vs-uwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="896"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="sUp-LJ-0BD">
@@ -200,6 +215,33 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Vih-62-2Aa" kind="show" id="AVX-9x-5k8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="F5r-hP-ROG" detailTextLabel="9ov-OB-JzB" style="IBUITableViewCellStyleValue1" id="cTy-va-afG">
+                                        <rect key="frame" x="0.0" y="167" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cTy-va-afG" id="B0c-lw-igl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="F5r-hP-ROG">
+                                                    <rect key="frame" x="20" y="12" width="58" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STGradientButton" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9ov-OB-JzB">
+                                                    <rect key="frame" x="256.5" y="12" width="137.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dTQ-Oj-j5z" kind="show" id="Yrx-Gp-lRz"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

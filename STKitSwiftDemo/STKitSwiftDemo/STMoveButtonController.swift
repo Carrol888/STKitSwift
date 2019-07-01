@@ -32,4 +32,5 @@ class STMoveButtonController: UIViewController {
         view.addSubview(moveButton)
         return moveButton
     }()
+
 }
