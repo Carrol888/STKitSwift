@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0492AF2522C9B7EA00F73D31 /* STHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF2422C9B7EA00F73D31 /* STHUD.swift */; };
+		0492AF2C22C9B9A500F73D31 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0492AF2B22C9B9A500F73D31 /* SnapKit.framework */; };
+		0492AF2E22C9B9CF00F73D31 /* STAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF2D22C9B9CF00F73D31 /* STAlertView.swift */; };
+		0492AF3022C9C12D00F73D31 /* UIViewController+STKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF2F22C9C12D00F73D31 /* UIViewController+STKit.swift */; };
 		6796E4AD21D21F3900C2C5E4 /* STKitSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6796E4A321D21F3800C2C5E4 /* STKitSwift.framework */; };
 		6796E4B221D21F3900C2C5E4 /* STKitSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6796E4B121D21F3900C2C5E4 /* STKitSwiftTests.swift */; };
 		6796E4B421D21F3900C2C5E4 /* STKitSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6796E4A621D21F3800C2C5E4 /* STKitSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0492AF2422C9B7EA00F73D31 /* STHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STHUD.swift; sourceTree = "<group>"; };
+		0492AF2B22C9B9A500F73D31 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SnapKit.framework; sourceTree = "<group>"; };
+		0492AF2D22C9B9CF00F73D31 /* STAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAlertView.swift; sourceTree = "<group>"; };
+		0492AF2F22C9C12D00F73D31 /* UIViewController+STKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+STKit.swift"; sourceTree = "<group>"; };
 		6796E4A321D21F3800C2C5E4 /* STKitSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = STKitSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6796E4A621D21F3800C2C5E4 /* STKitSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STKitSwift.h; sourceTree = "<group>"; };
 		6796E4A721D21F3900C2C5E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0492AF2C22C9B9A500F73D31 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,12 +64,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0492AF2622C9B84200F73D31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0492AF2B22C9B9A500F73D31 /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6796E49921D21F3800C2C5E4 = {
 			isa = PBXGroup;
 			children = (
 				6796E4A521D21F3800C2C5E4 /* STKitSwift */,
 				6796E4B021D21F3900C2C5E4 /* STKitSwiftTests */,
 				6796E4A421D21F3800C2C5E4 /* Products */,
+				0492AF2622C9B84200F73D31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,9 +94,12 @@
 		6796E4A521D21F3800C2C5E4 /* STKitSwift */ = {
 			isa = PBXGroup;
 			children = (
+				0492AF2422C9B7EA00F73D31 /* STHUD.swift */,
 				6796E4A621D21F3800C2C5E4 /* STKitSwift.h */,
 				6796E4EE21D220A500C2C5E4 /* UIView+STKit.swift */,
 				67FB10BE21E054A20012DE4A /* Date+STKit.swift */,
+				0492AF2D22C9B9CF00F73D31 /* STAlertView.swift */,
+				0492AF2F22C9C12D00F73D31 /* UIViewController+STKit.swift */,
 				6796E4A721D21F3900C2C5E4 /* Info.plist */,
 			);
 			path = STKitSwift;
@@ -203,6 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6796E4EF21D220A500C2C5E4 /* UIView+STKit.swift in Sources */,
+				0492AF2522C9B7EA00F73D31 /* STHUD.swift in Sources */,
+				0492AF2E22C9B9CF00F73D31 /* STAlertView.swift in Sources */,
+				0492AF3022C9C12D00F73D31 /* UIViewController+STKit.swift in Sources */,
 				67FB10BF21E054A20012DE4A /* Date+STKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,8 +384,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = STKitSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -387,8 +416,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = STKitSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

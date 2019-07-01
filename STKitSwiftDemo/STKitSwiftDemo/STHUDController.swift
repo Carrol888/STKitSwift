@@ -18,13 +18,9 @@ class STHUDController: UIViewController {
     
     @IBAction func actionButton(_ sender: UIButton) {
         STHUD.show(textView.text)
-//        STHUD.show(textView.text) { (finish) in
-//            print(finish)
-//        }
     }
     
     // MARK: 4.interface
-    
     @IBOutlet weak var textView: UITextView!
     // MARK: 5.getter
 
