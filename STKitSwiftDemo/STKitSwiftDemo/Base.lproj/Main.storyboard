@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2R-Mj-5NN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40.579710144927539" y="219.64285714285714"/>
+            <point key="canvasLocation" x="41" y="-613"/>
         </scene>
         <!--Alert Controller-->
         <scene sceneID="EYz-MP-K7n">
@@ -93,7 +93,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEQ-vz-J0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="41" y="875"/>
+            <point key="canvasLocation" x="41" y="100"/>
+        </scene>
+        <!--Move Button Controller-->
+        <scene sceneID="hnB-u7-Gfm">
+            <objects>
+                <viewController id="Vih-62-2Aa" customClass="STMoveButtonController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QYi-3h-yO3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8770066353" green="0.97549229449999997" blue="0.98584653249999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="2oe-7o-TmT"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hHS-xg-0WF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="824"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="sUp-LJ-0BD">
@@ -160,13 +175,32 @@
                                             <segue destination="yK6-Xs-q8C" kind="show" id="cfN-aW-TPb"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="A4t-bA-KGf">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="T6j-fF-EBa" detailTextLabel="CXT-Hp-vTr" style="IBUITableViewCellStyleValue1" id="A4t-bA-KGf">
                                         <rect key="frame" x="0.0" y="123" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A4t-bA-KGf" id="N5e-sy-rvD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="T6j-fF-EBa">
+                                                    <rect key="frame" x="20" y="12" width="58" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STMoveButton" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CXT-Hp-vTr">
+                                                    <rect key="frame" x="280.5" y="12" width="113.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Vih-62-2Aa" kind="show" id="AVX-9x-5k8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
