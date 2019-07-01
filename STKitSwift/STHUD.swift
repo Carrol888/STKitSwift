@@ -9,25 +9,24 @@ import UIKit
 import SnapKit
 public class STHUD: UIView{
     
+    // MARK: 1.lift cycle
     @discardableResult
-    class func show(_ title:String, completion: ((Bool) -> Void)? = nil) -> STHUD{
-        let noticeView = show(title)
-        noticeView.completion = completion
-        return noticeView
-    }
-    
-    @discardableResult
-    public class func show(_ title: String) -> STHUD{
+    public class func show(_ title:String, completion:((Bool) -> Void)? = nil) -> STHUD{
         let noticeView = STHUD.init(frame: UIScreen.main.bounds)
         noticeView.setupUI()
         noticeView.labelTitle.text = title
         noticeView.show()
+        noticeView.completion = completion
         return noticeView
     }
     
+    // MARK: 2.private methods
     private func show()  {
         let window = UIApplication.shared.keyWindow!
         window.addSubview(self)
+        self.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
+        }
         UIView.animate(withDuration: 0.3, animations: {
             self.contentView.layer.opacity = 1.0
         }) { (finished) in
@@ -43,7 +42,7 @@ public class STHUD: UIView{
             self.completion?(true)
         }
     }
-    
+    // MARK: 3.event response
     private func setupUI(){
         contentView.snp.makeConstraints { (maker) in
             maker.left.greaterThanOrEqualTo(50)
@@ -58,9 +57,9 @@ public class STHUD: UIView{
             maker.bottom.equalTo(-14)
         }
     }
-    
+    // MARK: 4.interface
     var completion: ((Bool) -> Void)? = nil
-    
+    // MARK: 5.getter
     private lazy var labelTitle: UILabel = {
         let labelTitle = UILabel()
         labelTitle.textColor = .white
@@ -72,7 +71,7 @@ public class STHUD: UIView{
     }()
     
     private lazy var contentView: UIView = {
-        let contentView = UIView(frame: CGRect(x: 0, y: 0, width: 180, height: 116))
+        let contentView = UIView()
         contentView.layer.cornerRadius = 5
         contentView.backgroundColor = UIColor.init(white: 0, alpha: 0.7)
         contentView.layer.masksToBounds = true
