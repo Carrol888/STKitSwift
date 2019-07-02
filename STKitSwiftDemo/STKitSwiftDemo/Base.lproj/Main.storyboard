@@ -123,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYg-vs-uwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4228" y="-188"/>
+            <point key="canvasLocation" x="4227.536231884058" y="-188.16964285714286"/>
         </scene>
         <!--Gradient View Controller-->
         <scene sceneID="QaP-bS-ucs">
@@ -133,10 +133,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zqP-pb-8ms" customClass="STGradientView" customModule="STKitSwiftDemo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zqP-pb-8ms" customClass="STGradientView" customModule="STKitSwift">
                                 <rect key="frame" x="87" y="102" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="UVL-Au-CX3"/>
+                                    <constraint firstAttribute="width" constant="240" id="hn9-Vl-Guk"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="topColor">
                                         <color key="value" red="1" green="0.29825364126403131" blue="0.081907561374950588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -173,10 +176,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TlC-r6-bLm" customClass="STGradientView" customModule="STKitSwiftDemo" customModuleProvider="target">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TlC-r6-bLm" customClass="STGradientView" customModule="STKitSwift">
                                 <rect key="frame" x="87" y="275" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Wqf-la-7uM"/>
+                                    <constraint firstAttribute="height" constant="128" id="wHn-Ek-wtu"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="topColor">
                                         <color key="value" red="0.32884079192674465" green="1" blue="0.59245968159652818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -215,6 +221,12 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TlC-r6-bLm" firstAttribute="top" secondItem="zqP-pb-8ms" secondAttribute="bottom" constant="50" id="S5d-f9-30v"/>
+                            <constraint firstItem="TlC-r6-bLm" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="ZEd-hQ-Q44"/>
+                            <constraint firstItem="zqP-pb-8ms" firstAttribute="top" secondItem="psC-1j-LPe" secondAttribute="top" constant="20" id="cC4-22-X75"/>
+                            <constraint firstItem="zqP-pb-8ms" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="yZs-Vx-jOk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="psC-1j-LPe"/>
                     </view>
                 </viewController>

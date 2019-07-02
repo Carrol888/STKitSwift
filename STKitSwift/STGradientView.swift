@@ -92,7 +92,6 @@ import UIKit
         layer.shadowOffset = CGSize(width: shadowX, height: shadowY)
         layer.shadowRadius = shadowBlur
         layer.shadowOpacity = 1
-        
     }
     
     public func animate(duration: TimeInterval, newTopColor: UIColor, newBottomColor: UIColor) {

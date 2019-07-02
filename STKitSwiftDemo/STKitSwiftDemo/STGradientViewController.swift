@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import STKitSwift
 class STGradientViewController: UIViewController {
 
     // MARK: 1.lift cycle
