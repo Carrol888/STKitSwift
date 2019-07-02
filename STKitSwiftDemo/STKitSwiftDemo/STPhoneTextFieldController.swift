@@ -13,7 +13,6 @@ class STPhoneTextFieldController: UIViewController {
     // MARK: 1.lift cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tf2.config.defaultConfig = STPhoneFormat.init(defaultPhoneFormat: "### #### ####")
         tf2.config.defaultConfig = STPhoneFormat.init(defaultPhoneFormat: "### #### ####")
     }
     // MARK: 2.private methods
