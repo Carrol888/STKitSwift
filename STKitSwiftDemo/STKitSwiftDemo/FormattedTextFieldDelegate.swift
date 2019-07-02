@@ -15,8 +15,8 @@ final class FormattedTextFieldDelegate: NSObject, UITextFieldDelegate {
     var prefix: String?
     var hasPredictiveInput: Bool = true
 
-    private let formatter: PhoneFormatter
-    init(formatter: PhoneFormatter) {
+    private let formatter: STPhoneFormatter
+    init(formatter: STPhoneFormatter) {
         self.formatter = formatter
     }
 
