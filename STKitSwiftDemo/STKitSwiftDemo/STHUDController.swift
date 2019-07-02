@@ -20,6 +20,9 @@ class STHUDController: UIViewController {
         STHUD.show(textView.text)
     }
     
+    @IBAction func actionShow(_ sender: UIButton) {
+        STHUD.show("Hello World")
+    }
     // MARK: 4.interface
     @IBOutlet weak var textView: UITextView!
     // MARK: 5.getter
