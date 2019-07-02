@@ -22,6 +22,14 @@ class STPhoneTextFieldController: UIViewController {
             maker.top.equalTo(tf2.snp.bottom).offset(20)
         }
         
+        
+        tf2.textDidChangeBlock = { field in
+            if let text = field?.text, text != "" {
+                print(text)
+            } else {
+                print("No text")
+            }
+        }
     }
     // MARK: 2.private methods
     
