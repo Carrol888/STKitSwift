@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		0410C62D22C9F2FE005C2382 /* STMoveButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C62C22C9F2FE005C2382 /* STMoveButtonController.swift */; };
 		0410C63122C9FD56005C2382 /* STGradientButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C63022C9FD56005C2382 /* STGradientButtonController.swift */; };
+		0410C63722CA0F01005C2382 /* ConfigurationRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C63222CA0F00005C2382 /* ConfigurationRepo.swift */; };
+		0410C63822CA0F01005C2382 /* PhoneFormattedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C63322CA0F00005C2382 /* PhoneFormattedTextField.swift */; };
+		0410C63922CA0F01005C2382 /* FormattedTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C63422CA0F00005C2382 /* FormattedTextFieldDelegate.swift */; };
+		0410C63A22CA0F01005C2382 /* PhoneFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C63522CA0F00005C2382 /* PhoneFormatter.swift */; };
+		0410C63B22CA0F01005C2382 /* PhoneFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C63622CA0F00005C2382 /* PhoneFormat.swift */; };
 		0492AF2322C9A6C000F73D31 /* STHUDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF2222C9A6C000F73D31 /* STHUDController.swift */; };
 		0492AF3222C9C29700F73D31 /* STAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF3122C9C29700F73D31 /* STAlertController.swift */; };
 		4D69364BE872B2A6668E6F1A /* Pods_STKitSwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B46BAF2544514D16BC81115 /* Pods_STKitSwiftDemo.framework */; };
@@ -21,6 +26,11 @@
 /* Begin PBXFileReference section */
 		0410C62C22C9F2FE005C2382 /* STMoveButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMoveButtonController.swift; sourceTree = "<group>"; };
 		0410C63022C9FD56005C2382 /* STGradientButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STGradientButtonController.swift; sourceTree = "<group>"; };
+		0410C63222CA0F00005C2382 /* ConfigurationRepo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationRepo.swift; sourceTree = "<group>"; };
+		0410C63322CA0F00005C2382 /* PhoneFormattedTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormattedTextField.swift; sourceTree = "<group>"; };
+		0410C63422CA0F00005C2382 /* FormattedTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormattedTextFieldDelegate.swift; sourceTree = "<group>"; };
+		0410C63522CA0F00005C2382 /* PhoneFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormatter.swift; sourceTree = "<group>"; };
+		0410C63622CA0F00005C2382 /* PhoneFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneFormat.swift; sourceTree = "<group>"; };
 		0492AF2222C9A6C000F73D31 /* STHUDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STHUDController.swift; sourceTree = "<group>"; };
 		0492AF3122C9C29700F73D31 /* STAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAlertController.swift; sourceTree = "<group>"; };
 		3B46BAF2544514D16BC81115 /* Pods_STKitSwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STKitSwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +91,11 @@
 				0492AF3122C9C29700F73D31 /* STAlertController.swift */,
 				0410C62C22C9F2FE005C2382 /* STMoveButtonController.swift */,
 				0410C63022C9FD56005C2382 /* STGradientButtonController.swift */,
+				0410C63222CA0F00005C2382 /* ConfigurationRepo.swift */,
+				0410C63422CA0F00005C2382 /* FormattedTextFieldDelegate.swift */,
+				0410C63622CA0F00005C2382 /* PhoneFormat.swift */,
+				0410C63322CA0F00005C2382 /* PhoneFormattedTextField.swift */,
+				0410C63522CA0F00005C2382 /* PhoneFormatter.swift */,
 				6784886121B7CCFE0002FDF5 /* Main.storyboard */,
 				6784886421B7CD000002FDF5 /* Assets.xcassets */,
 				6784886621B7CD000002FDF5 /* LaunchScreen.storyboard */,
@@ -213,8 +228,13 @@
 			files = (
 				0492AF3222C9C29700F73D31 /* STAlertController.swift in Sources */,
 				0410C62D22C9F2FE005C2382 /* STMoveButtonController.swift in Sources */,
+				0410C63922CA0F01005C2382 /* FormattedTextFieldDelegate.swift in Sources */,
+				0410C63A22CA0F01005C2382 /* PhoneFormatter.swift in Sources */,
 				0410C63122C9FD56005C2382 /* STGradientButtonController.swift in Sources */,
+				0410C63B22CA0F01005C2382 /* PhoneFormat.swift in Sources */,
 				0492AF2322C9A6C000F73D31 /* STHUDController.swift in Sources */,
+				0410C63822CA0F01005C2382 /* PhoneFormattedTextField.swift in Sources */,
+				0410C63722CA0F01005C2382 /* ConfigurationRepo.swift in Sources */,
 				6784885E21B7CCFE0002FDF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
