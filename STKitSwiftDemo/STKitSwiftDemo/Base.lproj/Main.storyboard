@@ -12,7 +12,7 @@
         <!--Controller-->
         <scene sceneID="ey3-7G-fdG">
             <objects>
-                <viewController id="3Zu-ep-hZS" customClass="STHUDController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="3Zu-ep-hZS" customClass="STHUDController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wED-MK-cxm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                 <rect key="frame" x="107" y="318" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="MsB-Tj-bB0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="MsB-Tj-bB0"/>
                                     <constraint firstAttribute="height" constant="50" id="RQM-ec-hd8"/>
                                 </constraints>
                                 <state key="normal" title="Show HUD">
@@ -63,7 +63,7 @@
         <!--Alert Controller-->
         <scene sceneID="EYz-MP-K7n">
             <objects>
-                <viewController id="yK6-Xs-q8C" customClass="STAlertController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="yK6-Xs-q8C" customClass="STAlertController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ss8-wH-ID1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="tI4-DP-hgK"/>
-                                    <constraint firstAttribute="width" constant="200" id="y9A-Rk-k1U"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="y9A-Rk-k1U"/>
                                 </constraints>
                                 <state key="normal" title="Show AlertView">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -93,12 +93,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEQ-vz-J0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="-541"/>
+            <point key="canvasLocation" x="2584" y="-1089"/>
         </scene>
         <!--Move Button Controller-->
         <scene sceneID="hnB-u7-Gfm">
             <objects>
-                <viewController id="Vih-62-2Aa" customClass="STMoveButtonController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Vih-62-2Aa" customClass="STMoveButtonController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QYi-3h-yO3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,12 +108,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHS-xg-0WF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="153"/>
+            <point key="canvasLocation" x="3432" y="-652"/>
         </scene>
         <!--Gradient Button Controller-->
         <scene sceneID="ldy-ZC-jYZ">
             <objects>
-                <viewController id="dTQ-Oj-j5z" customClass="STGradientButtonController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="dTQ-Oj-j5z" customClass="STGradientButtonController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NDs-x3-AYr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYg-vs-uwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="896"/>
+            <point key="canvasLocation" x="4228" y="-188"/>
+        </scene>
+        <!--Phone Text Field Controller-->
+        <scene sceneID="z0y-qY-gNu">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="dCj-bT-2Qd" customClass="STPhoneTextFieldController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h7m-8f-l6r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="format: #############" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="atD-yb-i0P" customClass="STPhoneTextField" customModule="STKitSwiftDemo" customModuleProvider="target">
+                                <rect key="frame" x="20" y="108" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="POY-VB-sRa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="format: ### #### ####" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BD8-eT-Yjs" customClass="STPhoneTextField" customModule="STKitSwiftDemo" customModuleProvider="target">
+                                <rect key="frame" x="20" y="146" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KMj-9Z-Lmk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8770066353" green="0.97549229449999997" blue="0.98584653249999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sva-Ge-fuc" firstAttribute="trailing" secondItem="BD8-eT-Yjs" secondAttribute="trailing" constant="20" id="4ey-j5-qZ8"/>
+                            <constraint firstItem="atD-yb-i0P" firstAttribute="leading" secondItem="Sva-Ge-fuc" secondAttribute="leading" constant="20" id="LeV-FU-6KM"/>
+                            <constraint firstItem="BD8-eT-Yjs" firstAttribute="top" secondItem="atD-yb-i0P" secondAttribute="bottom" constant="8" id="Sph-tk-qhx"/>
+                            <constraint firstItem="BD8-eT-Yjs" firstAttribute="leading" secondItem="Sva-Ge-fuc" secondAttribute="leading" constant="20" id="UKM-2b-Xcv"/>
+                            <constraint firstItem="atD-yb-i0P" firstAttribute="top" secondItem="Sva-Ge-fuc" secondAttribute="top" constant="20" id="Xp4-cP-Q7M"/>
+                            <constraint firstItem="Sva-Ge-fuc" firstAttribute="trailing" secondItem="atD-yb-i0P" secondAttribute="trailing" constant="20" id="YA8-F9-aOO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Sva-Ge-fuc"/>
+                    </view>
+                    <connections>
+                        <outlet property="tf1" destination="atD-yb-i0P" id="hye-ly-GDn"/>
+                        <outlet property="tf2" destination="BD8-eT-Yjs" id="HXw-w7-ybB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DvE-V7-S4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3431.884057971015" y="388.39285714285711"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="sUp-LJ-0BD">
@@ -244,6 +291,33 @@
                                             <segue destination="dTQ-Oj-j5z" kind="show" id="Yrx-Gp-lRz"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="ZiI-kY-hyV" detailTextLabel="7YD-R2-pgK" style="IBUITableViewCellStyleValue1" id="szZ-2O-VvY">
+                                        <rect key="frame" x="0.0" y="211" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="szZ-2O-VvY" id="TH8-yL-rCz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZiI-kY-hyV">
+                                                    <rect key="frame" x="20" y="12" width="58" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STPhoneTextField" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7YD-R2-pgK">
+                                                    <rect key="frame" x="257.5" y="12" width="136.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dCj-bT-2Qd" kind="show" id="I9t-UD-uuA"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -256,7 +330,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRv-an-djF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-964" y="710"/>
+            <point key="canvasLocation" x="-381" y="-188"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Dyl-6P-CtK">

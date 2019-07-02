@@ -1,26 +1,44 @@
 //
-//  PhoneFormattedTextField.swift
-//  PhoneNumberFormatter
+//  STPhoneTextField.swift
+//  STKitSwift
 //
-//  Created by Sergey Shatunov on 8/20/17.
-//  Copyright © 2017 SHS. All rights reserved.
+//  The MIT License (MIT)
 //
+//  Copyright (c) 2019 沈天
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in all
+//  copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+//  SOFTWARE.
 
 import UIKit
 
 /**
  UITextField subclass to handle phone numbers formats
-*/
-public class PhoneFormattedTextField: UITextField {
-
-    private let formatProxy: FormattedTextFieldDelegate
+ */
+@IBDesignable public class STPhoneTextField: UITextField {
+    
+    private let formatProxy: STPhoneDelegate
     private let formatter: STPhoneFormatter
-
+    
     /**
      Use is to configure format properties
      */
     public let config: STPhoneConfig
-
+    
     /**
      If you have a predictive input enabled.
      Default is true.
@@ -33,7 +51,7 @@ public class PhoneFormattedTextField: UITextField {
             return formatProxy.hasPredictiveInput
         }
     }
-
+    
     /**
      Prefix for all formats
      */
@@ -46,27 +64,27 @@ public class PhoneFormattedTextField: UITextField {
             return formatProxy.prefix
         }
     }
-
+    
     public override init(frame: CGRect) {
         config =  STPhoneConfig()
         formatter = STPhoneFormatter(config: config)
-        formatProxy = FormattedTextFieldDelegate(formatter: formatter)
+        formatProxy = STPhoneDelegate(formatter: formatter)
         super.init(frame: frame)
-
+        
         super.delegate = formatProxy
         self.keyboardType = .numberPad
     }
-
+    
     public required init?(coder aDecoder: NSCoder) {
         config =  STPhoneConfig()
         formatter = STPhoneFormatter(config: config)
-        formatProxy = FormattedTextFieldDelegate(formatter: formatter)
+        formatProxy = STPhoneDelegate(formatter: formatter)
         super.init(coder: aDecoder)
-
+        
         super.delegate = formatProxy
         self.keyboardType = .numberPad
     }
-
+    
     override public var delegate: UITextFieldDelegate? {
         get {
             return formatProxy.userDelegate
@@ -75,7 +93,7 @@ public class PhoneFormattedTextField: UITextField {
             formatProxy.userDelegate = newValue
         }
     }
-
+    
     /**
      Block is called on text change
      */
@@ -87,14 +105,14 @@ public class PhoneFormattedTextField: UITextField {
             formatProxy.textDidChangeBlock = newValue
         }
     }
-
+    
     /**
      Return phone number without format. Ex: 89201235678
      */
     public func phoneNumber() -> String? {
         return formatter.digitOnlyString(text: self.text)
     }
-
+    
     /**
      Return phone number without format and prefix
      */
@@ -106,12 +124,12 @@ public class PhoneFormattedTextField: UITextField {
             return formatter.digitOnlyString(text: self.text)
         }
     }
-
+    
     public var formattedText: String? {
         get {
             return self.text
         }
-
+        
         set {
             if let value = newValue {
                 let result = formatter.formatText(text: value, prefix: prefix)
@@ -119,10 +137,97 @@ public class PhoneFormattedTextField: UITextField {
             } else {
                 self.text = ""
             }
-
+            
             self.textDidChangeBlock?(self)
             self.sendActions(for: .valueChanged)
         }
+    }
+}
+
+final class STPhoneDelegate: NSObject, UITextFieldDelegate {
+    weak var userDelegate: UITextFieldDelegate?
+    
+    var textDidChangeBlock: ((_ textField: UITextField?) -> Void)?
+    var prefix: String?
+    var hasPredictiveInput: Bool = true
+    
+    private let formatter: STPhoneFormatter
+    init(formatter: STPhoneFormatter) {
+        self.formatter = formatter
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange,
+                   replacementString string: String) -> Bool {
+        if let prefix = prefix, range.location < prefix.count {
+            return false
+        }
+        
+        let resultText = textField.text ?? ""
+        let caretPosition = formatter.pushCaretPosition(text: resultText, range: range)
+        
+        let isDeleting = string.count == 0
+        let newString: String
+        if isDeleting {
+            newString = formatter.formattedRemove(text: resultText, range: range)
+        } else {
+            let rangeExpressionStart = resultText.index(resultText.startIndex, offsetBy: range.location)
+            let rangeExpressionEnd = resultText.index(resultText.startIndex, offsetBy: range.location + range.length)
+            newString = resultText.replacingCharacters(in: rangeExpressionStart..<rangeExpressionEnd, with: string)
+        }
+        
+        let result = formatter.formatText(text: newString, prefix: prefix)
+        textField.text = result.text
+        
+        if let positionRange = formatter.popCaretPosition(textField: textField,
+                                                          range: range,
+                                                          caretPosition: caretPosition) {
+            textField.selectedTextRange = textField.textRange(from: positionRange.startPosition,
+                                                              to: positionRange.endPosition)
+        }
+        
+        self.textDidChangeBlock?(textField)
+        textField.sendActions(for: .valueChanged)
+        
+        if hasPredictiveInput == true && (textField.text == nil || textField.text == "") && string == " " {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    // MARK: UITextfield Delegate
+    
+    func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        return userDelegate?.textFieldShouldBeginEditing?(textField) ?? true
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        userDelegate?.textFieldDidBeginEditing?(textField)
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        return userDelegate?.textFieldShouldEndEditing?(textField) ?? true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        userDelegate?.textFieldDidEndEditing?(textField)
+    }
+    
+    func textFieldShouldClear(_ textField: UITextField) -> Bool {
+        if let userResult = userDelegate?.textFieldShouldClear?(textField) {
+            return userResult
+        }
+        
+        if let prefix = prefix {
+            textField.text = prefix
+            return false
+        } else {
+            return true
+        }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return userDelegate?.textFieldShouldReturn?(textField) ?? true
     }
 }
 
@@ -140,7 +245,7 @@ public struct STPhoneFormat {
     }
 }
 
-final public class STPhoneConfig{
+public class STPhoneConfig{
     
     private var customConfigs: [STPhoneFormat] = []
     public var defaultConfig: STPhoneFormat = STPhoneFormat(defaultPhoneFormat: "#############")
@@ -364,4 +469,3 @@ final class STPhoneFormatter {
             }
     }
 }
-
