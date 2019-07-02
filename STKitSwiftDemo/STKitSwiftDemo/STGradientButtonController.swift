@@ -36,8 +36,8 @@ class STGradientButtonController: UIViewController {
     
     private lazy var gradientButton: STGradientButton = {
         let gradientButton = STGradientButton()
-        gradientButton.startColor = .red
-        gradientButton.endColor =  UIColor.init(white: 0.4, alpha: 1)
+        gradientButton.startColor = UIColor.init(red: 255.0/255, green: 76.0/255, blue: 21.0/255, alpha: 1)
+        gradientButton.endColor =  UIColor.init(red: 255.0/255, green: 156.0/255, blue: 121.0/255, alpha: 1)
         gradientButton.setTitle("使用layer", for: .normal)
         gradientButton.layer.cornerRadius = 22
         gradientButton.layer.masksToBounds = true

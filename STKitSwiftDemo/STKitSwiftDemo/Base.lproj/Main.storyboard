@@ -312,7 +312,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TlC-r6-bLm" firstAttribute="top" secondItem="zqP-pb-8ms" secondAttribute="bottom" constant="50" id="S5d-f9-30v"/>
+                            <constraint firstItem="TlC-r6-bLm" firstAttribute="top" secondItem="zqP-pb-8ms" secondAttribute="bottom" constant="45" id="S5d-f9-30v"/>
                             <constraint firstItem="TlC-r6-bLm" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="ZEd-hQ-Q44"/>
                             <constraint firstItem="zqP-pb-8ms" firstAttribute="top" secondItem="psC-1j-LPe" secondAttribute="top" constant="20" id="cC4-22-X75"/>
                             <constraint firstItem="zqP-pb-8ms" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="yZs-Vx-jOk"/>
