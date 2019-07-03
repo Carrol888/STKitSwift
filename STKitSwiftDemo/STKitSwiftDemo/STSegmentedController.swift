@@ -41,11 +41,10 @@ class STSegmentedController: UIViewController {
             print(item)
         }
         segmentedControl1.currentIndex = 3
-
     }
     
     // MARK: 2.private methods
-    
+
     // MARK: 3.event response
     
     // MARK: 4.interface
