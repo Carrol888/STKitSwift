@@ -8,6 +8,7 @@
 
 import UIKit
 import SnapKit
+import STKitSwift
 class STSegmentedController: UIViewController {
 
     // MARK: 1.lift cycle
