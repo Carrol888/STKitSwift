@@ -41,7 +41,10 @@ import SnapKit
         fatalError("init(coder:) has not been implemented")
     }
     // MARK: 2.private methods
-    
+    func getWidth(string: String, font: UIFont, height: CGFloat = 15) -> CGFloat {
+        let rect = NSString(string: string).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: height), options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        return ceil(rect.width)
+    }
     // MARK: 3.event response
     
     @objc func actionClick(_ gesture: UITapGestureRecognizer) {
@@ -82,7 +85,7 @@ import SnapKit
                     if fontSelected.pointSize > fontDefault.pointSize {
                         font = fontSelected
                     }
-                    var subViewW:CGFloat = title.st_getWidth(font: font) + 8
+                    var subViewW:CGFloat = getWidth(string: title, font: font) + 8
                     if subViewW <= 60 {
                         subViewW = 60
                     }

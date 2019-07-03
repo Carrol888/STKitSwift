@@ -33,8 +33,7 @@ class STSegmentedController: UIViewController {
             maker.height.equalTo(50)
         }
         
-        let titles1 = ["关注iOS开发社区", "推荐Swift开发社区", "国际Swift开发社区", "娱乐Swift开发社区", "视频", "科技", "军事", "设计", "体育", "读书",
-        "推荐1", "国际2", "娱乐3", "视频4", "科技5", "军事iOS开发社区Swift开发社区", "设计6", "体育7", "读书8"]
+        let titles1 = ["iOS开发社区", "Swift开发社区", "flutter开发社区", "Java开发社区", "视频", "科技", "军事", "设计", "体育", "读书"]
         segmentedControl1.heightTitle = 50
         segmentedControl1.titles = titles1
         segmentedControl1.selectBlock = { (item) in
