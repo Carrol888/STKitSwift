@@ -215,6 +215,21 @@
             </objects>
             <point key="canvasLocation" x="4227.536231884058" y="-188.16964285714286"/>
         </scene>
+        <!--Segmented Controller-->
+        <scene sceneID="NQb-1K-Xw9">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="Fuu-LZ-kVl" customClass="STSegmentedController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5q8-Qh-OUd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.8770066353" green="0.97549229449999997" blue="0.98584653249999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="oNg-kE-o21"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MPk-zM-OcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1851" y="1108"/>
+        </scene>
         <!--Gradient View Controller-->
         <scene sceneID="QaP-bS-ucs">
             <objects>
@@ -322,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfS-LZ-qTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="900"/>
+            <point key="canvasLocation" x="2583" y="915"/>
         </scene>
         <!--Phone Text Field Controller-->
         <scene sceneID="z0y-qY-gNu">
@@ -542,6 +557,33 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="MyH-EI-1mS" kind="show" id="JgM-GA-9YR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="NEo-BA-QOo" detailTextLabel="gPs-6t-9Ek" style="IBUITableViewCellStyleValue1" id="71r-j7-AiR">
+                                        <rect key="frame" x="0.0" y="299" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71r-j7-AiR" id="z4k-nX-h9M">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NEo-BA-QOo">
+                                                    <rect key="frame" x="20" y="12" width="58" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STSegmentedControl" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gPs-6t-9Ek">
+                                                    <rect key="frame" x="229" y="12" width="165" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Fuu-LZ-kVl" kind="show" id="Bci-ul-ZTb"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
