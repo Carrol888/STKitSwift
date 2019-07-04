@@ -1,9 +1,14 @@
 # STKitSwift
 
+<p align="center">
+<img src="Resources/Banner.png" alt="STKitSwift Banner">
+</p>
+
 [![Platform](https://img.shields.io/cocoapods/p/STKitSwift.svg?style=flat)](https://github.com/STShenZhaoliang/STKitSwift)
 ![Version](https://img.shields.io/cocoapods/v/STKitSwift.svg?style=flat)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-
+[![Language](https://img.shields.io/badge/language-Swift%205.0-orange.svg)](https://swift.org/)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://github.com/STShenZhaoliang/STKitSwift/blob/master/LICENSE)
 STKitSwift is a collection of useful classes, structs and extensions to **develop Apps faster**.
 
 Installing and Usage
