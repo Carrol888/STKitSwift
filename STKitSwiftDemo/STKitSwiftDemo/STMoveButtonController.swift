@@ -28,7 +28,7 @@ class STMoveButtonController: UIViewController {
     // MARK: 5.getter
     private lazy var moveButton: STMoveButton = {
         let moveButton = STMoveButton()
-        moveButton.setImage(UIImage.init(named: "icon_happy"), for: .normal)
+        moveButton.setImage(UIImage.init(named: "icon_wheel"), for: .normal)
         view.addSubview(moveButton)
         return moveButton
     }()

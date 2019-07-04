@@ -2,6 +2,49 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:../CHANGELOG.md">
+   </FileRef>
+   <FileRef
+      location = "group:../LICENSE">
+   </FileRef>
+   <FileRef
+      location = "group:../README.md">
+   </FileRef>
+   <FileRef
+      location = "group:../STKitSwift.podspec">
+   </FileRef>
+   <Group
+      location = "group:../Resources"
+      name = "Resources">
+      <FileRef
+         location = "group:STAlertView02.png">
+      </FileRef>
+      <FileRef
+         location = "group:STProgressView01.png">
+      </FileRef>
+      <FileRef
+         location = "group:STAlertView01.png">
+      </FileRef>
+      <FileRef
+         location = "group:STPhoneTextField01.png">
+      </FileRef>
+      <FileRef
+         location = "group:STGradientView01.png">
+      </FileRef>
+      <FileRef
+         location = "group:STHUD02.png">
+      </FileRef>
+      <FileRef
+         location = "group:STHUD01.png">
+      </FileRef>
+      <FileRef
+         location = "group:STGradientButton01.png">
+      </FileRef>
+      <FileRef
+         location = "group:STSegmentedControl01.png">
+      </FileRef>
+   </Group>
+   <FileRef
       location = "group:STKitSwiftDemo.xcodeproj">
    </FileRef>
    <FileRef

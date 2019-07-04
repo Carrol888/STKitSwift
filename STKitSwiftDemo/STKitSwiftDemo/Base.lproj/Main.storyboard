@@ -242,8 +242,8 @@
                                 <rect key="frame" x="87" y="102" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="UVL-Au-CX3"/>
-                                    <constraint firstAttribute="width" constant="240" id="hn9-Vl-Guk"/>
+                                    <constraint firstAttribute="width" constant="240" id="59t-Ud-yS4"/>
+                                    <constraint firstAttribute="height" constant="128" id="X5q-BM-mYh"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="topColor">
@@ -285,8 +285,8 @@
                                 <rect key="frame" x="87" y="275" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Wqf-la-7uM"/>
-                                    <constraint firstAttribute="height" constant="128" id="wHn-Ek-wtu"/>
+                                    <constraint firstAttribute="height" constant="128" id="Lo7-hH-EKQ"/>
+                                    <constraint firstAttribute="width" constant="240" id="jmV-58-fhS"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="topColor">
@@ -328,8 +328,8 @@
                                 <rect key="frame" x="87" y="460" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="LgI-xj-Vhs"/>
-                                    <constraint firstAttribute="width" constant="240" id="eGb-XR-AWW"/>
+                                    <constraint firstAttribute="height" constant="128" id="W1U-T3-J6k"/>
+                                    <constraint firstAttribute="width" constant="240" id="gPd-0p-7uP"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="topColor">
@@ -371,8 +371,8 @@
                                 <rect key="frame" x="87" y="642" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="cs2-Xd-YAl"/>
-                                    <constraint firstAttribute="width" constant="240" id="lwN-rW-uRZ"/>
+                                    <constraint firstAttribute="height" constant="128" id="bVX-Dq-7So"/>
+                                    <constraint firstAttribute="width" constant="240" id="xDH-BE-1FC"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="topColor">
@@ -413,14 +413,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="f4Y-u5-kiJ" firstAttribute="leading" secondItem="TlC-r6-bLm" secondAttribute="leading" id="1rD-4a-5rY"/>
-                            <constraint firstItem="f4Y-u5-kiJ" firstAttribute="top" secondItem="c4d-he-TlQ" secondAttribute="bottom" constant="54" id="7Yx-CW-mvh"/>
-                            <constraint firstItem="f4Y-u5-kiJ" firstAttribute="leading" secondItem="c4d-he-TlQ" secondAttribute="leading" id="BLK-qr-Gai"/>
-                            <constraint firstItem="TlC-r6-bLm" firstAttribute="top" secondItem="zqP-pb-8ms" secondAttribute="bottom" constant="45" id="S5d-f9-30v"/>
-                            <constraint firstItem="TlC-r6-bLm" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="ZEd-hQ-Q44"/>
-                            <constraint firstItem="zqP-pb-8ms" firstAttribute="top" secondItem="psC-1j-LPe" secondAttribute="top" constant="14" id="cC4-22-X75"/>
-                            <constraint firstItem="psC-1j-LPe" firstAttribute="bottom" secondItem="f4Y-u5-kiJ" secondAttribute="bottom" constant="92" id="qiz-67-cLn"/>
-                            <constraint firstItem="zqP-pb-8ms" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="yZs-Vx-jOk"/>
+                            <constraint firstItem="f4Y-u5-kiJ" firstAttribute="top" secondItem="c4d-he-TlQ" secondAttribute="bottom" constant="54" id="01T-71-I03"/>
+                            <constraint firstItem="TlC-r6-bLm" firstAttribute="top" secondItem="zqP-pb-8ms" secondAttribute="bottom" constant="45" id="7Ut-RP-DYW"/>
+                            <constraint firstItem="zqP-pb-8ms" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="9fr-n2-LT7"/>
+                            <constraint firstItem="f4Y-u5-kiJ" firstAttribute="height" secondItem="zqP-pb-8ms" secondAttribute="height" id="Cg6-Hv-wEZ"/>
+                            <constraint firstItem="TlC-r6-bLm" firstAttribute="height" secondItem="zqP-pb-8ms" secondAttribute="height" id="Cpu-WX-g5M"/>
+                            <constraint firstItem="f4Y-u5-kiJ" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="Fus-TZ-gtk"/>
+                            <constraint firstItem="zqP-pb-8ms" firstAttribute="top" secondItem="psC-1j-LPe" secondAttribute="top" constant="14" id="HMc-kv-3V5"/>
+                            <constraint firstItem="c4d-he-TlQ" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="KYo-F2-O62"/>
+                            <constraint firstItem="TlC-r6-bLm" firstAttribute="width" secondItem="zqP-pb-8ms" secondAttribute="width" id="R3F-kc-HVI"/>
+                            <constraint firstItem="c4d-he-TlQ" firstAttribute="height" secondItem="zqP-pb-8ms" secondAttribute="height" id="Vgm-hD-P95"/>
+                            <constraint firstItem="c4d-he-TlQ" firstAttribute="top" secondItem="TlC-r6-bLm" secondAttribute="bottom" constant="57" id="W2D-yB-UM2"/>
+                            <constraint firstItem="c4d-he-TlQ" firstAttribute="width" secondItem="zqP-pb-8ms" secondAttribute="width" id="jCV-Wl-1os"/>
+                            <constraint firstItem="TlC-r6-bLm" firstAttribute="centerX" secondItem="2i4-Bb-V8K" secondAttribute="centerX" id="jIY-OB-iX1"/>
+                            <constraint firstItem="f4Y-u5-kiJ" firstAttribute="width" secondItem="zqP-pb-8ms" secondAttribute="width" id="nTT-Zy-ZCI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="psC-1j-LPe"/>
                     </view>
