@@ -27,7 +27,7 @@ Installing and Usage
 
 Effect Picture
 ====================
-<img src="Resources/STAlertView01.png" width="25%" height="25%"><img src="Resources/STAlertView02.png" width="25%" height="25%"><img src="Resources/STGradientButton01.png" width="25%" height="25%"><img src="Resources/STGradientView01.png" width="25%" height="25%"><img src="Resources/STHUD01.png" width="25%" height="25%"><img src="Resources/STHUD02.png" width="25%" height="25%"><img src="Resources/STMoveButton01.png" width="25%" height="25%"><img src="Resources/STPhoneTextField01.png" width="25%" height="25%"><img src="Resources/STProgressView01.png" width="25%" height="25%"><img src="Resources/STSegmentedControl01.png" width="25%" height="25%">
+<img src="Resources/STAlertView01.png" width="25%" height="25%"><img src="Resources/STAlertView02.png" width="25%" height="25%"><img src="Resources/STGradientButton01.png" width="25%" height="25%"><img src="Resources/STGradientView01.png" width="25%" height="25%"><img src="Resources/STHUD01.png" width="25%" height="25%"><img src="Resources/STHUD02.png" width="25%" height="25%"><img src="Resources/STMoveButton01.png" width="25%" height="25%"><img src="Resources/STPhoneTextField01.png" width="25%" height="25%"><img src="Resources/STProgressView01.png" width="25%" height="25%"><img src="Resources/STSegmentedControl01.png" width="25%" height="25%"><img src="Resources/STTimerButton01.png" width="25%" height="25%">
 
 
 ## 1.STAlertView
@@ -155,4 +155,37 @@ segmentedControl.selectBlock = { (item) in
             print(item)
         }
 segmentedControl.currentIndex = 3
+```
+
+## 9.STTimerButton
+
+### Installing and Usage
+
+```
+pod 'STKitSwift/STTimerButton'
+
+```
+
+### Example
+
+```swift
+buttonCode.startCountDown(duration: 10) { (button, type, time)  in
+print("button = \(button) type = \(type) time = \(time)")
+    switch type {
+    case .start:
+        button.isEnabled = false
+        button.setTitle(time.description + "s", for: .normal)
+        button.backgroundColor = .gray
+    case .ongoing:
+        button.isEnabled = false
+        button.setTitle(time.description + "s", for: .normal)
+        button.backgroundColor = .gray
+    case .finish:
+        button.isEnabled = true
+        button.setTitle("重新发送", for: .normal)
+        button.backgroundColor = .red
+    default:
+        button.isEnabled = true
+    }
+}
 ```

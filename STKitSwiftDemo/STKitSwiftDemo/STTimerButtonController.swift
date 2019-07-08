@@ -28,14 +28,12 @@ class STTimerButtonController: UIViewController {
             maker.centerX.equalToSuperview()
             maker.top.equalTo(buttonCode.snp.bottom).offset(20)
         }
-        
         actionTime()
     }
     
     deinit {
         buttonCode.invalidate()
         buttonTime.invalidate()
-        
         print("--------- STTimerButtonController deinit ---------")
     }
     // MARK: 2.private methods
@@ -53,7 +51,7 @@ class STTimerButtonController: UIViewController {
     
     // MARK: 3.event response
     @objc func actionCode(){
-        buttonCode.startCountDown(duration: 3) { (button, type, time)  in
+        buttonCode.startCountDown(duration: 10) { (button, type, time)  in
             print("button = \(button) type = \(type) time = \(time)")
             switch type {
             case .start:
@@ -71,7 +69,6 @@ class STTimerButtonController: UIViewController {
             default:
                 button.isEnabled = true
             }
-            
         }
     }
     

@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 public enum STTimerButtonType: Int {
     case none  = -1   // no state
     case start = 0
@@ -21,9 +20,7 @@ public enum STTimerButtonType: Int {
 
 public class STTimerButton: UIButton {
     // MARK: 1.lift cycle
-    deinit {
-        print("STTimerButton deinit")
-    }
+
     // MARK: 2.private methods
     public func startCountDown(duration time: Int, processBlock block: ((_ button: STTimerButton, _ type: STTimerButtonType, _ timerNumer: Int) -> Void)? = nil){
         duration = time
