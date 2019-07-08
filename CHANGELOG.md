@@ -1,18 +1,22 @@
 
 # Changelog
 
-
 ## 1.1
 
-1. 添加UIAlertController封装
-2. 添加渐变色的按钮、视图、进度条
-3. 添加可移动按钮
-4. 添加弱提示框
-5. 添加指定输入样式手机输入框
-6. 添加自定义分段选择器
 
-## 1.0
+| 名称 | 功能描述 | 状态 |
+| --- | --- | --- |
+| STAlertView | UIAlertController在alert风格下的封装 | 新增 |
+| STGradientButton | 支持渐变色功能的按钮 | 新增 |
+| STGradientView | IB支持渐变色、阴影功能的视图 | 新增 |
+| STHUD | 弱提示框 | 新增 |
+| STMoveButton | 可移动按钮 | 新增 |
+| STPhoneTextField | 指定文本显示样式与文本正则的手机号输入框 | 新增 |
+| STProgressView | 支持渐变色功能的进度框 | 新增 |
+| STSegmentedControl | 根据内容偏移的分段选择器 | 新增 |
 
-1. 添加常用的类别
-2. 添加常用的功能
+## 1.2（未发布）
 
+| 名称 | 功能描述 | 状态 |
+| --- | --- | --- |
+| STTimerButton | 支持计时与倒计时的按钮 | 新增 |
