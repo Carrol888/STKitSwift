@@ -180,7 +180,7 @@ segmentedControl.selectBlock = { (item) in
 segmentedControl.currentIndex = 3
 ```
 
-## 9.STTimerButton
+## STTimerButton
 
 ### Installing and Usage
 
