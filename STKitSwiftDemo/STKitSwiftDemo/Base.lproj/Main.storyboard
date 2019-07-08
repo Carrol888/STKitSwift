@@ -74,7 +74,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b2R-Mj-5NN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="-1329"/>
+            <point key="canvasLocation" x="1016" y="-1896"/>
         </scene>
         <!--Alert Controller-->
         <scene sceneID="EYz-MP-K7n">
@@ -183,7 +183,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VEQ-vz-J0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2584" y="-1089"/>
+            <point key="canvasLocation" x="1851" y="-1783"/>
         </scene>
         <!--Move Button Controller-->
         <scene sceneID="hnB-u7-Gfm">
@@ -198,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hHS-xg-0WF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3432" y="-652"/>
+            <point key="canvasLocation" x="2583" y="-1594"/>
         </scene>
         <!--Gradient Button Controller-->
         <scene sceneID="ldy-ZC-jYZ">
@@ -213,7 +213,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MYg-vs-uwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4227.536231884058" y="-188.16964285714286"/>
+            <point key="canvasLocation" x="3432" y="-1371"/>
         </scene>
         <!--Segmented Controller-->
         <scene sceneID="NQb-1K-Xw9">
@@ -228,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPk-zM-OcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="1108"/>
+            <point key="canvasLocation" x="5051" y="76"/>
         </scene>
         <!--Gradient View Controller-->
         <scene sceneID="QaP-bS-ucs">
@@ -433,7 +433,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KfS-LZ-qTt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="915"/>
+            <point key="canvasLocation" x="5052" y="-633"/>
         </scene>
         <!--Phone Text Field Controller-->
         <scene sceneID="z0y-qY-gNu">
@@ -480,7 +480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DvE-V7-S4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3431.884057971015" y="388.39285714285711"/>
+            <point key="canvasLocation" x="4242" y="-1062"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="sUp-LJ-0BD">
@@ -709,6 +709,33 @@
                                             <segue destination="tNc-yr-FvV" kind="show" id="5bg-T1-JVV"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Jvy-Dg-Kx7" detailTextLabel="yoh-rA-n5A" style="IBUITableViewCellStyleValue1" id="5qA-jI-eGM">
+                                        <rect key="frame" x="0.0" y="387" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5qA-jI-eGM" id="TEb-I4-Cw2">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jvy-Dg-Kx7">
+                                                    <rect key="frame" x="20" y="12" width="58" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="STTimerButton" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yoh-rA-n5A">
+                                                    <rect key="frame" x="278" y="12" width="116" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sMv-eT-R86" kind="show" id="wi1-Pj-gfT"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -795,10 +822,10 @@
             </objects>
             <point key="canvasLocation" x="-1745" y="2402"/>
         </scene>
-        <!--Segmented Controller-->
+        <!--Timer Button Controller-->
         <scene sceneID="JVh-wy-9Ti">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="sMv-eT-R86" customClass="STSegmentedController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="sMv-eT-R86" customClass="STTimerButtonController" customModule="STKitSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xcx-ul-rdP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -808,7 +835,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7xo-as-uJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1851" y="1108"/>
+            <point key="canvasLocation" x="3432" y="663"/>
         </scene>
         <!--Progress Controller-->
         <scene sceneID="NgA-Hb-is6">
@@ -823,7 +850,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZy-zb-nK4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1017" y="1246"/>
+            <point key="canvasLocation" x="4241" y="343"/>
         </scene>
     </scenes>
 </document>
