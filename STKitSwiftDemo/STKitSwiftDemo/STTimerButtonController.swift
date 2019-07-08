@@ -32,15 +32,10 @@ class STTimerButtonController: UIViewController {
         actionTime()
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        buttonCode.cancel()
-        buttonTime.cancel()
-    }
-    
     deinit {
-        buttonCode.cancel()
-        buttonTime.cancel()
+        buttonCode.invalidate()
+        buttonTime.invalidate()
+        
         print("--------- STTimerButtonController deinit ---------")
     }
     // MARK: 2.private methods
@@ -58,7 +53,7 @@ class STTimerButtonController: UIViewController {
     
     // MARK: 3.event response
     @objc func actionCode(){
-        buttonCode.startCountDown(duration: 3) { (button, type, time) in
+        buttonCode.startCountDown(duration: 3) { (button, type, time)  in
             print("button = \(button) type = \(type) time = \(time)")
             switch type {
             case .start:
@@ -83,13 +78,13 @@ class STTimerButtonController: UIViewController {
     @objc func actionTime(){
         switch buttonTime.type {
         case .none:
-            buttonTime.startTime(startTime: 22222) { (button, type, time) in
+            buttonTime.startTime(startTime: 22222) { [weak self] (button, type, time) in
                 print("button = \(button) type = \(type) time = \(time)")
                 switch type {
                 case .start:
-                    button.setTitle(self.secondsToStr(second: time), for: .normal)
+                    button.setTitle(self?.secondsToStr(second: time), for: .normal)
                 case .ongoing:
-                    button.setTitle(self.secondsToStr(second: time), for: .normal)
+                    button.setTitle(self?.secondsToStr(second: time), for: .normal)
                 case .pause:
                     button.setTitle("⏸", for: .normal)
                 case .finish:

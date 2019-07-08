@@ -13,7 +13,6 @@
 		04783DBC22CAE8870089AAB8 /* STPhoneTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783DBB22CAE8870089AAB8 /* STPhoneTextFieldController.swift */; };
 		04783DC822CB01B70089AAB8 /* STGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783DC722CB01B70089AAB8 /* STGradientViewController.swift */; };
 		0491946F22D2E88000709995 /* STTimerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491946E22D2E87F00709995 /* STTimerButton.swift */; };
-		0491947122D2E89C00709995 /* STTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0491947022D2E89C00709995 /* STTimer.swift */; };
 		0492AF2322C9A6C000F73D31 /* STHUDController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF2222C9A6C000F73D31 /* STHUDController.swift */; };
 		0492AF3222C9C29700F73D31 /* STAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0492AF3122C9C29700F73D31 /* STAlertController.swift */; };
 		04EB3E0222CC2D270064DDF1 /* STSegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EB3E0122CC2D270064DDF1 /* STSegmentedController.swift */; };
@@ -32,7 +31,6 @@
 		04783DBB22CAE8870089AAB8 /* STPhoneTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STPhoneTextFieldController.swift; sourceTree = "<group>"; };
 		04783DC722CB01B70089AAB8 /* STGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STGradientViewController.swift; sourceTree = "<group>"; };
 		0491946E22D2E87F00709995 /* STTimerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTimerButton.swift; sourceTree = "<group>"; };
-		0491947022D2E89C00709995 /* STTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTimer.swift; sourceTree = "<group>"; };
 		0492AF2222C9A6C000F73D31 /* STHUDController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STHUDController.swift; sourceTree = "<group>"; };
 		0492AF3122C9C29700F73D31 /* STAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STAlertController.swift; sourceTree = "<group>"; };
 		04EB3E0122CC2D270064DDF1 /* STSegmentedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STSegmentedController.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 				04EB3E0122CC2D270064DDF1 /* STSegmentedController.swift */,
 				04EB3E0522CC7E8B0064DDF1 /* STProgressController.swift */,
 				0491946E22D2E87F00709995 /* STTimerButton.swift */,
-				0491947022D2E89C00709995 /* STTimer.swift */,
 				0466F64822CF531C0007D707 /* STTimerButtonController.swift */,
 				6784886121B7CCFE0002FDF5 /* Main.storyboard */,
 				6784886421B7CD000002FDF5 /* Assets.xcassets */,
@@ -236,7 +233,6 @@
 				0466F64922CF531C0007D707 /* STTimerButtonController.swift in Sources */,
 				0410C62D22C9F2FE005C2382 /* STMoveButtonController.swift in Sources */,
 				0410C63122C9FD56005C2382 /* STGradientButtonController.swift in Sources */,
-				0491947122D2E89C00709995 /* STTimer.swift in Sources */,
 				04EB3E0622CC7E8B0064DDF1 /* STProgressController.swift in Sources */,
 				0492AF2322C9A6C000F73D31 /* STHUDController.swift in Sources */,
 				04783DBC22CAE8870089AAB8 /* STPhoneTextFieldController.swift in Sources */,

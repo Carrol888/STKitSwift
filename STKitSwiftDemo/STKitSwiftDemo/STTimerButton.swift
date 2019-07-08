@@ -16,12 +16,14 @@ public enum STTimerButtonType: Int {
     case resume
     case ongoing
     case finish
-    case cancel
+    case invalidate
 }
 
 public class STTimerButton: UIButton {
     // MARK: 1.lift cycle
-
+    deinit {
+        print("STTimerButton deinit")
+    }
     // MARK: 2.private methods
     public func startCountDown(duration time: Int, processBlock block: ((_ button: STTimerButton, _ type: STTimerButtonType, _ timerNumer: Int) -> Void)? = nil){
         duration = time
@@ -66,9 +68,8 @@ public class STTimerButton: UIButton {
         processBlock?(self, type, timerNumer)
     }
     
-    public func cancel() {
-        type = .cancel
-        timer?.fireDate = Date.distantFuture
+    public func invalidate() {
+        type = .invalidate
         timer?.invalidate()
         timer = nil
         processBlock?(self, type, timerNumer)
@@ -76,7 +77,6 @@ public class STTimerButton: UIButton {
     
     public func finish() {
         type = .finish
-        timer?.fireDate = Date.distantFuture
         timer?.invalidate()
         timer = nil
         processBlock?(self, type, timerNumer)

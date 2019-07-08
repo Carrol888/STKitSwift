@@ -25,9 +25,12 @@ Installing and Usage
     
 ```
 
-## 01.STAlertView
+Effect Picture
+====================
+<img src="Resources/STAlertView01.png" width="25%" height="25%"><img src="Resources/STAlertView02.png" width="25%" height="25%"><img src="Resources/STGradientButton01.png" width="25%" height="25%"><img src="Resources/STGradientView01.png" width="25%" height="25%"><img src="Resources/STHUD01.png" width="25%" height="25%"><img src="Resources/STHUD02.png" width="25%" height="25%"><img src="Resources/STMoveButton01.png" width="25%" height="25%"><img src="Resources/STPhoneTextField01.png" width="25%" height="25%"><img src="Resources/STProgressView01.png" width="25%" height="25%"><img src="Resources/STSegmentedControl01.png" width="25%" height="25%">
 
-<img src="Resources/STAlertView01.png" width="50%" height="50%"><img src="Resources/STAlertView02.png" width="50%" height="50%">
+
+## 1.STAlertView
 
 ### Installing
 
@@ -44,19 +47,30 @@ STAlertView.show(title: title, message: nil, cancelTitle: "取消", otherTitle: 
 }
 ```
 
-## 02.STGradientButton
+## 2.STGradientButton
 
-<img src="Resources/STGradientButton01.png" width="50%" height="50%">
+### Installing
 
-### Installing and Usage
-
-```
+``` ruby
 pod 'STKitSwift/STGradientButton'
 ```
 
-## 03.STGradientView
+### Example
 
-<img src="Resources/STGradientView01.png" width="50%" height="50%">
+```swift
+    private lazy var gradientButton: STGradientButton = {
+        let gradientButton = STGradientButton()
+        gradientButton.startColor = UIColor.init(red: 255.0/255, green: 76.0/255, blue: 21.0/255, alpha: 1)
+        gradientButton.endColor =  UIColor.init(red: 255.0/255, green: 156.0/255, blue: 121.0/255, alpha: 1)
+        gradientButton.setTitle("使用layer", for: .normal)
+        gradientButton.layer.cornerRadius = 22
+        gradientButton.layer.masksToBounds = true
+        view.addSubview(gradientButton)
+        return gradientButton
+    }()
+```
+
+## 3.STGradientView
 
 ### Installing and Usage
 
@@ -64,9 +78,7 @@ pod 'STKitSwift/STGradientButton'
 pod 'STKitSwift/STGradientView'
 ```
 
-## 04.STHUD
-
-<img src="Resources/STHUD01.png" width="50%" height="50%"><img src="Resources/STHUD02.png" width="50%" height="50%">
+## 4.STHUD
 
 ### Installing and Usage
 
@@ -74,25 +86,49 @@ pod 'STKitSwift/STGradientView'
 pod 'STKitSwift/STHUD'
 ```
 
-## 05.STMoveButton
-<img src="Resources/STMoveButton.gif" width="50%" height="50%">
+### Example
+
+```swift
+STHUD.show("Hello World")
+```
+
+## 5.STMoveButton
+
 ### Installing and Usage
 
 ```
 pod 'STKitSwift/STMoveButton'
 ```
 
-## 06.STPhoneTextField
-<img src="Resources/STPhoneTextField01.png" width="50%" height="50%">
+### Example
+
+```swift
+private lazy var moveButton: STMoveButton = {
+    let moveButton = STMoveButton()
+    moveButton.setImage(UIImage.init(named: "icon_wheel"), for: .normal)
+    view.addSubview(moveButton)
+    return moveButton
+    }()
+```
+
+## 6.STPhoneTextField
+
 ### Installing and Usage
 
 ```
 pod 'STKitSwift/STPhoneTextField'
 ```
 
-## 07.STProgressView
+### Example
 
-<img src="Resources/STProgressView01.png" width="50%" height="50%">
+```swift
+let tf3 = STPhoneTextField()
+tf3.config.defaultConfig = STPhoneFormat.init(defaultPhoneFormat: "(####) #######")
+tf3.prefix = "+86 "
+tf3.placeholder = "format:+86 (####) #######"
+```
+
+## 7.STProgressView
 
 ### Installing and Usage
 
@@ -100,13 +136,23 @@ pod 'STKitSwift/STPhoneTextField'
 pod 'STKitSwift/STProgressView'
 ```
 
-## 08.STSegmentedControl
-
-<img src="Resources/STSegmentedControl01.png" width="50%" height="50%">
+## 8.STSegmentedControl
 
 ### Installing and Usage
 
 ```
 pod 'STKitSwift/STSegmentedControl'
 
+```
+
+### Example
+
+```swift
+let titles = ["关注", "推荐", "国际", "娱乐", "视频", "科技", "军事", "设计", "体育", "读书"]
+let segmentedControl = STSegmentedControl()
+segmentedControl.titles = titles
+segmentedControl.selectBlock = { (item) in
+            print(item)
+        }
+segmentedControl.currentIndex = 3
 ```
