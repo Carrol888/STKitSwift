@@ -38,22 +38,22 @@ Changelog
 
 | 名称 | 功能描述 | 状态 |
 | --- | --- | --- |
-| [STAlertView@](#STAlertView) | UIAlertController在alert风格下的封装 | 新增 |
-| [STGradientButton@](#STGradientButton) | 支持渐变色功能的按钮 | 新增 |
-| STGradientView | IB支持渐变色、阴影功能的视图 | 新增 |
-| STHUD | 弱提示框 | 新增 |
-| STMoveButton | 可移动按钮 | 新增 |
-| STPhoneTextField | 指定文本显示样式与文本正则的手机号输入框 | 新增 |
-| STProgressView | 支持渐变色功能的进度框 | 新增 |
+| [STAlertView](#STAlertView) | UIAlertController在alert风格下的封装 | 新增 |
+| [STGradientButton](#STGradientButton) | 支持渐变色功能的按钮 | 新增 |
+| [STGradientView](#STGradientView) | IB支持渐变色、阴影功能的视图 | 新增 |
+| [STHUD](#STHUD) | 弱提示框 | 新增 |
+| [STMoveButton](#STMoveButton) | 可移动按钮 | 新增 |
+| [STPhoneTextField](#STPhoneTextField) | 指定文本显示样式与文本正则的手机号输入框 | 新增 |
+| [STProgressView](#STProgressView) | 支持渐变色功能的进度框 | 新增 |
 | [STSegmentedControl](#STSegmentedControl) | 根据内容偏移的分段选择器 | 新增 |
 
 ## 1.2（未发布）
 
 | 名称 | 功能描述 | 状态 |
 | --- | --- | --- |
-| STTimerButton | 支持计时与倒计时的按钮 | 新增 |
+| [STTimerButton](#STTimerButton) | 支持计时与倒计时的按钮 | 新增 |
 
-## STAlertView@
+## STAlertView
 
 ### Installing
 
@@ -70,7 +70,7 @@ STAlertView.show(title: title, message: nil, cancelTitle: "取消", otherTitle: 
 }
 ```
 
-## 2.STGradientButton@
+## STGradientButton
 
 ### Installing
 
@@ -93,7 +93,7 @@ pod 'STKitSwift/STGradientButton'
     }()
 ```
 
-## 3.STGradientView
+## STGradientView
 
 ### Installing and Usage
 
@@ -101,7 +101,7 @@ pod 'STKitSwift/STGradientButton'
 pod 'STKitSwift/STGradientView'
 ```
 
-## 4.STHUD
+## STHUD
 
 ### Installing and Usage
 
@@ -115,7 +115,7 @@ pod 'STKitSwift/STHUD'
 STHUD.show("Hello World")
 ```
 
-## 5.STMoveButton
+## STMoveButton
 
 ### Installing and Usage
 
@@ -134,7 +134,7 @@ private lazy var moveButton: STMoveButton = {
     }()
 ```
 
-## 6.STPhoneTextField
+## STPhoneTextField
 
 ### Installing and Usage
 
@@ -151,7 +151,7 @@ tf3.prefix = "+86 "
 tf3.placeholder = "format:+86 (####) #######"
 ```
 
-## 7.STProgressView
+## STProgressView
 
 ### Installing and Usage
 
