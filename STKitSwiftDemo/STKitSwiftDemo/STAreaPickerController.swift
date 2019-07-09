@@ -12,20 +12,23 @@ class STAreaPickerController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        pickerView.snp.makeConstraints { (maker) in
-            maker.left.bottom.right.equalToSuperview()
-            maker.top.equalTo(300)
+        label.snp.makeConstraints { (maker) in
+            maker.width.equalTo(300)
+            maker.center.equalToSuperview()
         }
     }
  
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        pickerView.show()
+        STAreaPickerView.show(inView: view) { [weak self](provinceName, provinceCode, cityName, cityCode, areaName, areaCode) in
+            self?.label.text = "provinceName = \(provinceName ?? "")\nprovinceCode = \(provinceCode ?? "")\ncityName = \(cityName ?? "")\ncityCode = \(cityCode ?? "")\nareaName = \(areaName ?? "")\nareaCode = \(areaCode ?? "")"
+        }
     }
     
-    private lazy var pickerView: STAreaPickerView = {
-        let pickerView = STAreaPickerView()
-        pickerView.backgroundColor = .red
-        view.addSubview(pickerView)
-        return pickerView
+    private lazy var label: UILabel = {
+        let label = UILabel()
+        label.backgroundColor = .red
+        label.numberOfLines = 0
+        view.addSubview(label)
+        return label
     }()
 }
