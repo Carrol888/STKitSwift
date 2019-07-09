@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import STKitSwift
 class STAreaPickerController: UIViewController {
 
     override func viewDidLoad() {

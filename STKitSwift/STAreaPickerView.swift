@@ -15,7 +15,7 @@ struct STChinaRegionsModel: Codable {
     var children:[STChinaRegionsModel]?
 }
 
-class STAreaPickerView: UIButton {
+public class STAreaPickerView: UIButton {
     // MARK: 1.lift cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -61,11 +61,8 @@ class STAreaPickerView: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
     
-    deinit {
-        print(" STAreaPickerView  deinit ")
-    }
     // MARK: 2.private methods
-    class func show(inView view:UIView, selectedBlock block:((String?, String?, String?, String?, String?, String?) -> ())?){
+    public class func show(inView view:UIView, selectedBlock block:((String?, String?, String?, String?, String?, String?) -> ())?){
         let pickerView = STAreaPickerView()
         view.addSubview(pickerView)
         pickerView.snp.makeConstraints { (maker) in
@@ -103,10 +100,7 @@ class STAreaPickerView: UIButton {
     
     // MARK: 4.interface
     private lazy var models: [STChinaRegionsModel] = {
-        guard let asset = NSDataAsset(name: "pca-code") else {
-            return []
-        }
-        let models:[STChinaRegionsModel]? = try? JSONDecoder().decode([STChinaRegionsModel].self, from: asset.data)
+        let models:[STChinaRegionsModel]? = try? JSONDecoder().decode([STChinaRegionsModel].self, from: Data.st_data(named: "pca-code"))
         return models ?? []
     }()
     
@@ -163,11 +157,11 @@ class STAreaPickerView: UIButton {
 }
 
 extension STAreaPickerView: UIPickerViewDataSource{
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+    public func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 3
     }
     
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+    public func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         switch component {
         case 0:
             return models.count
@@ -180,7 +174,7 @@ extension STAreaPickerView: UIPickerViewDataSource{
 }
 
 extension STAreaPickerView: UIPickerViewDelegate{
-    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+    public func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         
         var text = ""
         switch component {
@@ -200,7 +194,7 @@ extension STAreaPickerView: UIPickerViewDelegate{
         return label
     }
     
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         switch component {
         case 0:
             provinceRegion = models[row]

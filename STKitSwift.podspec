@@ -20,6 +20,9 @@ Pod::Spec.new do |s|
   
   s.subspec 'STKit' do |stkit|
     stkit.source_files = 'STKitSwift/*.swift'
+    stkit.resource_bundles = {
+      'STKitSwift_bundles' => ['STKitSwift/*.xcassets']
+    }
   end
   
   s.subspec 'STAlertView' do |stalertview|

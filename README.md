@@ -27,8 +27,7 @@ Installing and Usage
 
 Effect Picture
 ====================
-<img src="Resources/STAlertView01.png" width="25%" height="25%"><img src="Resources/STAlertView02.png" width="25%" height="25%"><img src="Resources/STGradientButton01.png" width="25%" height="25%"><img src="Resources/STGradientView01.png" width="25%" height="25%"><img src="Resources/STHUD01.png" width="25%" height="25%"><img src="Resources/STHUD02.png" width="25%" height="25%"><img src="Resources/STMoveButton01.png" width="25%" height="25%"><img src="Resources/STPhoneTextField01.png" width="25%" height="25%"><img src="Resources/STProgressView01.png" width="25%" height="25%"><img src="Resources/STSegmentedControl01.png" width="25%" height="25%"><img src="Resources/STTimerButton01.png" width="25%" height="25%">
-
+<img src="Resources/STAlertView01.png" width="25%" height="25%"><img src="Resources/STAlertView02.png" width="25%" height="25%"><img src="Resources/STGradientButton01.png" width="25%" height="25%"><img src="Resources/STGradientView01.png" width="25%" height="25%"><img src="Resources/STHUD01.png" width="25%" height="25%"><img src="Resources/STHUD02.png" width="25%" height="25%"><img src="Resources/STMoveButton01.png" width="25%" height="25%"><img src="Resources/STPhoneTextField01.png" width="25%" height="25%"><img src="Resources/STProgressView01.png" width="25%" height="25%"><img src="Resources/STSegmentedControl01.png" width="25%" height="25%"><img src="Resources/STTimerButton01.png" width="25%" height="25%"><img src="Resources/STAreaPickerView01.png" width="25%" height="25%">
 
 Changelog
 ====================
@@ -52,6 +51,7 @@ Changelog
 | 名称 | 功能描述 | 状态 |
 | --- | --- | --- |
 | [STTimerButton](#STTimerButton) | 支持计时与倒计时的按钮 | 新增 |
+| [STAreaPickerView](#STAreaPickerView) | 省市区选择器 | 新增 |
 
 ## STAlertView
 
@@ -210,5 +210,21 @@ print("button = \(button) type = \(type) time = \(time)")
     default:
         button.isEnabled = true
     }
+}
+```
+## STAreaPickerView
+
+### Installing and Usage
+
+```
+pod 'STKitSwift/STAreaPickerView'
+
+```
+
+### Example
+
+```swift
+STAreaPickerView.show(inView: view) { [weak self](provinceName, provinceCode, cityName, cityCode, areaName, areaCode) in
+
 }
 ```

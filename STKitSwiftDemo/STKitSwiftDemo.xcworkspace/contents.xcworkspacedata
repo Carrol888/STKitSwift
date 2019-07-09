@@ -17,6 +17,9 @@
       location = "group:../Resources"
       name = "Resources">
       <FileRef
+         location = "group:STAreaPickerView01.png">
+      </FileRef>
+      <FileRef
          location = "group:STAlertView02.png">
       </FileRef>
       <FileRef
