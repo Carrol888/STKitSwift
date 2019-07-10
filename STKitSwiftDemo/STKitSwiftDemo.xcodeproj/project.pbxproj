@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04018B0E22D56844008690AB /* STDatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04018B0D22D56844008690AB /* STDatePickerController.swift */; };
 		0410C62D22C9F2FE005C2382 /* STMoveButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C62C22C9F2FE005C2382 /* STMoveButtonController.swift */; };
 		0410C63122C9FD56005C2382 /* STGradientButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0410C63022C9FD56005C2382 /* STGradientButtonController.swift */; };
 		0466F64922CF531C0007D707 /* STTimerButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0466F64822CF531C0007D707 /* STTimerButtonController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04018B0D22D56844008690AB /* STDatePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STDatePickerController.swift; sourceTree = "<group>"; };
 		0410C62C22C9F2FE005C2382 /* STMoveButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STMoveButtonController.swift; sourceTree = "<group>"; };
 		0410C63022C9FD56005C2382 /* STGradientButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STGradientButtonController.swift; sourceTree = "<group>"; };
 		0466F64822CF531C0007D707 /* STTimerButtonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTimerButtonController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				04EB3E0522CC7E8B0064DDF1 /* STProgressController.swift */,
 				0466F64822CF531C0007D707 /* STTimerButtonController.swift */,
 				0491949222D337CA00709995 /* STAreaPickerController.swift */,
+				04018B0D22D56844008690AB /* STDatePickerController.swift */,
 				6784886121B7CCFE0002FDF5 /* Main.storyboard */,
 				6784886421B7CD000002FDF5 /* Assets.xcassets */,
 				6784886621B7CD000002FDF5 /* LaunchScreen.storyboard */,
@@ -234,6 +237,7 @@
 				0410C62D22C9F2FE005C2382 /* STMoveButtonController.swift in Sources */,
 				0410C63122C9FD56005C2382 /* STGradientButtonController.swift in Sources */,
 				04EB3E0622CC7E8B0064DDF1 /* STProgressController.swift in Sources */,
+				04018B0E22D56844008690AB /* STDatePickerController.swift in Sources */,
 				0492AF2322C9A6C000F73D31 /* STHUDController.swift in Sources */,
 				04783DBC22CAE8870089AAB8 /* STPhoneTextFieldController.swift in Sources */,
 				04783DC822CB01B70089AAB8 /* STGradientViewController.swift in Sources */,

@@ -58,6 +58,9 @@
       <FileRef
          location = "group:STTimerButton01.png">
       </FileRef>
+      <FileRef
+         location = "group:STDatePickerView01.png">
+      </FileRef>
    </Group>
    <FileRef
       location = "group:STKitSwiftDemo.xcodeproj">

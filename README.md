@@ -27,7 +27,8 @@ Installing and Usage
 
 Effect Picture
 ====================
-<img src="Resources/STAlertView01.png" width="25%" height="25%"><img src="Resources/STAlertView02.png" width="25%" height="25%"><img src="Resources/STGradientButton01.png" width="25%" height="25%"><img src="Resources/STGradientView01.png" width="25%" height="25%"><img src="Resources/STHUD01.png" width="25%" height="25%"><img src="Resources/STHUD02.png" width="25%" height="25%"><img src="Resources/STMoveButton01.png" width="25%" height="25%"><img src="Resources/STPhoneTextField01.png" width="25%" height="25%"><img src="Resources/STProgressView01.png" width="25%" height="25%"><img src="Resources/STSegmentedControl01.png" width="25%" height="25%"><img src="Resources/STTimerButton01.png" width="25%" height="25%"><img src="Resources/STAreaPickerView01.png" width="25%" height="25%">
+<img src="Resources/STAlertView01.png" width="25%" height="25%"><img src="Resources/STAlertView02.png" width="25%" height="25%"><img src="Resources/STGradientButton01.png" width="25%" height="25%"><img src="Resources/STGradientView01.png" width="25%" height="25%"><img src="Resources/STHUD01.png" width="25%" height="25%"><img src="Resources/STHUD02.png" width="25%" height="25%"><img src="Resources/STMoveButton01.png" width="25%" height="25%"><img src="Resources/STPhoneTextField01.png" width="25%" height="25%"><img src="Resources/STProgressView01.png" width="25%" height="25%"><img src="Resources/STSegmentedControl01.png" width="25%" height="25%"><img src="Resources/STTimerButton01.png" width="25%" height="25%"><img src="Resources/STAreaPickerView01.png" width="25%" height="25%"><img src="Resources/STDatePickerView01.png" width="25%" height="25%">
+
 
 Changelog
 ====================
@@ -46,12 +47,14 @@ Changelog
 | [STProgressView](#STProgressView) | 支持渐变色功能的进度框 | 新增 |
 | [STSegmentedControl](#STSegmentedControl) | 根据内容偏移的分段选择器 | 新增 |
 
+
 ## 1.2（未发布）
 
 | 名称 | 功能描述 | 状态 |
 | --- | --- | --- |
 | [STTimerButton](#STTimerButton) | 支持计时与倒计时的按钮 | 新增 |
 | [STAreaPickerView](#STAreaPickerView) | 省市区选择器 | 新增 |
+| [STDatePickerView](#STDatePickerView) | 年月日选择器 | 新增 |
 
 ## STAlertView
 
@@ -227,4 +230,24 @@ pod 'STKitSwift/STAreaPickerView'
 STAreaPickerView.show(inView: view) { [weak self](provinceName, provinceCode, cityName, cityCode, areaName, areaCode) in
 
 }
+```
+
+## STDatePickerView
+
+### Installing and Usage
+
+```
+pod 'STKitSwift/STDatePickerView'
+
+```
+
+### Example
+
+```swift
+STDatePickerView.show(minimumDateStr: "1900-01-01",
+                              maximumDateStr: "3000-01-01",
+                              currentDateStr: "2019-06-04")
+        { (year, month, day)in
+            print("year = \(year)  month = \(month)  day = \(day)")
+        }
 ```
