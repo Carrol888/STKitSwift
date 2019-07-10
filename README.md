@@ -48,7 +48,7 @@ Changelog
 | [STSegmentedControl](#STSegmentedControl) | 根据内容偏移的分段选择器 | 新增 |
 
 
-## 1.2（未发布）
+## 1.2
 
 | 名称 | 功能描述 | 状态 |
 | --- | --- | --- |

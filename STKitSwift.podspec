@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'STKitSwift'
-  s.version          = '1.1'
+  s.version          = '1.2'
   s.summary          = '快速开发'
   s.description      = '一些有用的类加快app开发，非常全面，是UIKit、Foundation的扩展'
 
@@ -57,5 +57,20 @@ Pod::Spec.new do |s|
     stsegmentedcontrol.source_files = 'STKitSwift/STSegmentedControl.swift', 'STKitSwift/UIView+STKit.swift'
   end
   
+  s.subspec 'STTimerButton' do |sttimerbutton|
+      sttimerbutton.source_files = 'STKitSwift/STTimerButton.swift'
+  end
+  
+  s.subspec 'STAreaPickerView' do |stareapickerview|
+      stareapickerview.source_files = 'STKitSwift/STAreaPickerView', 'STKitSwift/STKitAssets.swift'
+      stareapickerview.resource_bundles = {
+          'STKitSwift_bundles' => ['STKitSwift/*.xcassets']
+      }
+  end
+  
+  s.subspec 'STDatePickerView' do |stdatepickerview|
+      stdatepickerview.source_files = 'STKitSwift/STDatePickerView.swift', 'STKitSwift/Date+STKit.swift' 
+  end
+
 end
 
