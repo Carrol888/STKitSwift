@@ -38,6 +38,17 @@ public class STHUD: UIView{
         return noticeView
     }
     
+    @discardableResult
+    public class func show(_ title:String, image:UIImage?, completion:((Bool) -> Void)? = nil) -> STHUD{
+        let noticeView = STHUD.init(frame: UIScreen.main.bounds)
+        noticeView.setupImageUI()
+        noticeView.labelTitle.text = title
+        noticeView.imageView.image = image
+        noticeView.show()
+        noticeView.completion = completion
+        return noticeView
+    }
+    
     // MARK: 2.private methods
     private func show()  {
         let window = UIApplication.shared.keyWindow!
@@ -75,6 +86,26 @@ public class STHUD: UIView{
             maker.bottom.equalTo(-14)
         }
     }
+    
+    private func setupImageUI(){
+        contentView.snp.makeConstraints { (maker) in
+            maker.left.greaterThanOrEqualTo(50)
+            maker.right.lessThanOrEqualTo(-50)
+            maker.center.equalToSuperview()
+        }
+        
+        imageView.snp.makeConstraints { (maker) in
+            maker.centerX.equalToSuperview()
+            maker.top.equalTo(16)
+        }
+        
+        labelTitle.snp.makeConstraints { (maker) in
+            maker.left.equalTo(28)
+            maker.right.equalTo(-28)
+            maker.top.equalTo(imageView.snp.bottom).offset(14)
+            maker.bottom.equalTo(-14)
+        }
+    }
     // MARK: 4.interface
     var completion: ((Bool) -> Void)? = nil
     // MARK: 5.getter
@@ -95,5 +126,12 @@ public class STHUD: UIView{
         contentView.layer.masksToBounds = true
         addSubview(contentView)
         return contentView
+    }()
+    
+    private lazy var imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.contentMode = UIView.ContentMode.scaleAspectFit
+        contentView.addSubview(imageView)
+        return imageView
     }()
 }

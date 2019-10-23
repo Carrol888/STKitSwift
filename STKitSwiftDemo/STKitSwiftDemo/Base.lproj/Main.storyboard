@@ -55,6 +55,20 @@
                                     <action selector="actionShow:" destination="3Zu-ep-hZS" eventType="touchUpInside" id="Jmu-w2-Sj0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2j-DY-jbB">
+                                <rect key="frame" x="107" y="458" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="EWt-uo-e0T"/>
+                                    <constraint firstAttribute="height" constant="50" id="Wtw-uj-GhQ"/>
+                                </constraints>
+                                <state key="normal" title="Image Content">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionImage:" destination="3Zu-ep-hZS" eventType="touchUpInside" id="27A-0n-hDf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8770066352739726" green="0.97549229452054798" blue="0.98584653253424659" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -63,6 +77,8 @@
                             <constraint firstItem="VAU-BV-fBe" firstAttribute="leading" secondItem="Nfq-0m-Yhb" secondAttribute="leading" constant="50" id="GxL-AQ-n9E"/>
                             <constraint firstItem="e56-tW-boD" firstAttribute="top" secondItem="VAU-BV-fBe" secondAttribute="bottom" constant="20" id="MJw-bM-eeb"/>
                             <constraint firstItem="e56-tW-boD" firstAttribute="centerX" secondItem="wED-MK-cxm" secondAttribute="centerX" id="RfG-0l-kPL"/>
+                            <constraint firstItem="d2j-DY-jbB" firstAttribute="top" secondItem="9zZ-iZ-YJy" secondAttribute="bottom" constant="20" id="Xzq-tQ-N29"/>
+                            <constraint firstItem="d2j-DY-jbB" firstAttribute="centerX" secondItem="wED-MK-cxm" secondAttribute="centerX" id="cbs-2x-Q0Q"/>
                             <constraint firstItem="VAU-BV-fBe" firstAttribute="top" secondItem="Nfq-0m-Yhb" secondAttribute="top" constant="10" id="dGy-CQ-WZ6"/>
                             <constraint firstItem="9zZ-iZ-YJy" firstAttribute="top" secondItem="e56-tW-boD" secondAttribute="bottom" constant="20" id="l8u-ln-oYe"/>
                         </constraints>

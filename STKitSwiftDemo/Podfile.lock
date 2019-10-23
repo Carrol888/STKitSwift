@@ -1,9 +1,9 @@
 PODS:
   - SnapKit (5.0.0)
-  - STKitSwift (1.1):
+  - STKitSwift (1.2):
     - SnapKit
-    - STKitSwift/STKit (= 1.1)
-  - STKitSwift/STKit (1.1):
+    - STKitSwift/STKit (= 1.2)
+  - STKitSwift/STKit (1.2):
     - SnapKit
 
 DEPENDENCIES:
@@ -11,7 +11,7 @@ DEPENDENCIES:
   - STKitSwift (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
-  STKitSwift: e4a73aa26df6d7a762c907192daf3e7840aec356
+  STKitSwift: 395ba95b0b49a0605ce3251243eff4d53c58d74e
 
 PODFILE CHECKSUM: b5ed0d54d1e94a22b025305f0a758b0305d262ac
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.3

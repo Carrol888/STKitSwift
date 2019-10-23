@@ -27,5 +27,10 @@ class STHUDController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     // MARK: 5.getter
 
-
+    @IBAction func actionImage(_ sender: UIButton) {
+        STHUD.show(textView.text, image: UIImage.init(named:"icon_ok" )) { (flag) in
+            
+        }
+    }
+    
 }

@@ -56,6 +56,11 @@ Changelog
 | [STAreaPickerView](#STAreaPickerView) | 省市区选择器 | 新增 |
 | [STDatePickerView](#STDatePickerView) | 年月日选择器 | 新增 |
 
+## 1.3（未发布）
+| 名称 | 功能描述 | 状态 |
+| --- | --- | --- |
+| [STHUD](#STHUD) | 支持图片与文本提示 | 更新 |
+
 ## STAlertView
 
 ### Installing
