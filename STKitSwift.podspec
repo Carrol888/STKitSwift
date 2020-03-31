@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'STKitSwift'
-  s.version          = '1.2'
+  s.version          = '1.3'
   s.summary          = '快速开发'
   s.description      = '一些有用的类加快app开发，非常全面，是UIKit、Foundation的扩展'
 
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/STShenZhaoliang/STKitSwift.git', :tag => s.version.to_s }
 
   s.swift_version         = '5'
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '10.0'
   
   s.ios.dependency 'SnapKit'
   s.requires_arc = true
